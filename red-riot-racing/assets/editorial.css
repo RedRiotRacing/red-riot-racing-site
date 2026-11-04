@@ -70,3 +70,70 @@ body{overflow-x:clip}
 @media(max-width:880px){.road-head-v3{grid-template-columns:1fr;min-height:0}.road-head-v3 h2{font-size:clamp(88px,13vw,125px)}.road-head-v3 h2 .road-year{font-size:clamp(97px,15vw,155px)}.road-tech-graphic{min-height:290px}.road-placeholder{width:min(85%,480px)}.leadership-statement{font-size:clamp(62px,10vw,105px)!important}.riot-prefix{font-size:clamp(50px,11vw,110px)}.riot-focus{font-size:clamp(51px,10.8vw,115px)}}
 @media(max-width:570px){.signature-band-inner{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px;column-gap:17px}.process-item{font-size:clamp(23px,7vw,41px)}.road-head-v3 h2{font-size:clamp(70px,15vw,105px)}.road-head-v3 h2 .road-year{font-size:clamp(78px,18vw,125px)}.road-placeholder{min-height:190px}.road-lead-rule p{font-size:11px}.leadership-statement{font-size:clamp(47px,11vw,70px)!important}.leadership-statement>.offset-people{margin-left:15px}.riot-prefix{font-size:clamp(45px,10.6vw,67px)}.riot-focus{font-size:clamp(43px,10.3vw,70px);margin-left:0}.closing .riot-headline{gap:22px}.closing{padding-block:80px}}
 @media(max-width:360px){.riot-prefix{font-size:10vw}.riot-focus{font-size:10vw}.leadership-statement{font-size:10.5vw!important}}
+
+
+/* RED RIOT V4 — DARK-FIRST PREMIUM MOTORSPORT PALETTE.
+   White belongs to legible text; no full-page cream/white sections. */
+:root{--black:#0b0d10;--ink:#101318;--charcoal:#1a1d22;--mid:#252a31;--line:#323841;--paper:#171b21;--white:#f0f1f2;--muted:#a9b0b9;--red:#d21d30;--red-bright:#f13b4d}
+html{background:#0b0d10;color-scheme:dark}
+body{background:var(--black);color:var(--white)}
+.light{background:#171b21!important;color:var(--white)!important}
+.light p,.light .body-copy{color:#b3bbc5!important}
+.light .eyebrow,.light .mono{color:#a7b0b9!important}
+.light .section-number{color:var(--red-bright)!important}
+.light .view-link{color:#e9edf2}
+.light .red,.light .dot{color:var(--red-bright)}
+.light .number-band{border-color:#3b4149}
+.light .number-band .item{border-color:#3b4149}
+.light .number-band small{color:#a6b1ba}
+.road{background:#11151a!important;color:var(--white)!important}
+.road p,.road-lead-rule p{color:#a9b3be!important}
+.road-kicker,.road .mono{color:#aeb5c0!important}
+.road-tech-orbits{border-color:#454e59;background:repeating-radial-gradient(ellipse at 95% 95%,transparent 0 36px,rgba(160,170,185,.10) 37px,transparent 38px 75px)}
+.road-placeholder{background:rgba(23,29,36,.89)!important;border-color:#4d5866!important}
+.road-placeholder strong{color:#e9edf2!important}
+.road-placeholder .mono{color:#a6b0be!important}
+.tech-cross{color:#f13b4d!important}
+.machine-section{background:#12161b!important}
+.people-news,.partner-section,.merch-tease{background:#101318!important;color:#f0f1f2!important}
+.people-news p,.partner-section p,.merch-tease p{color:#aeb5bf!important}
+.page-hero{background:#11151a!important;color:#f0f1f2!important}
+.page-hero p{color:#aab4bd!important}
+.page-hero::after{color:rgba(255,255,255,.025)}
+.text-page,.contact-layout,.leadership-pending,.sponsor-detail{color:var(--white)}
+.sponsor-detail p,.text-page p,.contact-layout p{color:#b3bbc5!important}
+.note-panel{background:#222831!important;border:1px solid #3a414c!important;color:#f0f1f2!important}
+.note-panel p{color:#b3bbc5!important}
+.portrait-space,.product-space{background:linear-gradient(135deg,#202630,#0f1319)!important;border-color:#404752!important}
+.portrait-info,.product-caption{color:#f0f1f2!important}
+.portrait-info p{color:#b5bcc5!important}
+.sponsor-tile{background:#1d2229!important;color:#e9edf2!important;border-color:#3e4652!important}
+.sponsor-tile small{color:#9ba6b4!important}
+.timeline-row,.contact-list .line,.panel-line{border-color:#39414b!important}
+.timeline-row h3,.contact-list .line a{color:#f0f1f2!important}
+.timeline-row p{color:#aeb7c3!important}
+.feed-wrap{background:#1a2028!important;border-color:#3c4650!important}
+.feed-head{color:#e8edf2!important}
+.update-item{background:#1d222a!important;border-color:#39434d!important;color:#f0f1f2!important}
+.update-item p{color:#aeb8c4!important}
+.product-caption{border-color:#39424d!important}
+.footer{background:#0b0d10!important}
+/* Sponsor communications get ONE distinctive visual phrase. */
+.sponsor-chant{display:flex!important;flex-direction:column;gap:clamp(12px,1.75vw,28px);font-family:'Barlow Condensed',sans-serif!important;line-height:.95!important;letter-spacing:-.035em!important;overflow-wrap:normal}
+.sponsor-chant span{font-weight:200;display:block;white-space:nowrap;font-size:clamp(48px,5.7vw,110px)}
+.sponsor-chant strong{display:block;font:800 italic clamp(47px,5.3vw,107px)/1.03 'Oxanium','Chakra Petch',sans-serif;letter-spacing:-.08em;white-space:nowrap;transform:skew(-4deg);transform-origin:left}
+.sponsor-detail .sponsor-chant{margin:0 0 32px}
+.sponsor-detail .sponsor-chant strong{font-size:clamp(42px,4.8vw,88px)}
+.partner-copy .sponsor-chant span{font-size:clamp(52px,6.6vw,120px)}
+.partner-copy .sponsor-chant strong{font-size:clamp(50px,6vw,112px)}
+.merch-tease .sponsor-chant span{font-size:clamp(47px,6vw,112px)}
+.merch-tease .sponsor-chant strong{font-size:clamp(46px,5.6vw,105px)}
+.page-hero .mini-riot{font:800 italic .79em/1.08 'Oxanium',sans-serif;letter-spacing:-.085em;display:inline-block;transform:skew(-4deg);color:var(--white)}
+/* Branded full-red sponsorship section remains intentional high-contrast exception. */
+.closing{background:#c9192e!important}
+.closing .eyebrow{color:#fff}
+.closing p{color:#ffe0e4!important}
+/* Keep dark panels visually separate, without white backgrounds. */
+.section-space{border-color:#2f353e}
+@media(max-width:880px){.sponsor-chant span{font-size:clamp(42px,9vw,85px)}.sponsor-chant strong{font-size:clamp(39px,8.7vw,82px)}.sponsor-detail .sponsor-chant strong{font-size:clamp(36px,8.3vw,75px)}}
+@media(max-width:570px){.sponsor-chant span{font-size:clamp(35px,10vw,58px)}.sponsor-chant strong{font-size:clamp(32px,9.1vw,54px)}.partner-copy .sponsor-chant span,.merch-tease .sponsor-chant span{font-size:clamp(35px,10vw,58px)}.partner-copy .sponsor-chant strong,.merch-tease .sponsor-chant strong{font-size:clamp(32px,9vw,54px)}.page-hero .mini-riot{font-size:.68em}}
