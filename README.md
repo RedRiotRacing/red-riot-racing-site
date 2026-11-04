@@ -22,3 +22,5 @@ The Pages CMS configuration is at **repository root**, and its collection paths 
 
 ## Instagram post embed
 The Updates page now embeds the official Instagram post at https://www.instagram.com/p/DdZ5MH_kUa-/ using Instagram’s embed.js. If Instagram blocks the embed (privacy settings, tracking blockers, browser restrictions), visitors can open the post using the link in the fallback. This is a manually selected featured post, NOT an automatic latest-post feed. To change it, edit `red-riot-racing/data/site.json` -> `instagram_post_url` (and `instagram_url`/`instagram_handle` if the username changes).
+
+Facebook page is linked in the footer and Contact page: https://www.facebook.com/profile.php?id=61595641350852
