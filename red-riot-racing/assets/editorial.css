@@ -137,3 +137,45 @@ body{background:var(--black);color:var(--white)}
 .section-space{border-color:#2f353e}
 @media(max-width:880px){.sponsor-chant span{font-size:clamp(42px,9vw,85px)}.sponsor-chant strong{font-size:clamp(39px,8.7vw,82px)}.sponsor-detail .sponsor-chant strong{font-size:clamp(36px,8.3vw,75px)}}
 @media(max-width:570px){.sponsor-chant span{font-size:clamp(35px,10vw,58px)}.sponsor-chant strong{font-size:clamp(32px,9.1vw,54px)}.partner-copy .sponsor-chant span,.merch-tease .sponsor-chant span{font-size:clamp(35px,10vw,58px)}.partner-copy .sponsor-chant strong,.merch-tease .sponsor-chant strong{font-size:clamp(32px,9vw,54px)}.page-hero .mini-riot{font-size:.68em}}
+
+
+/* V5 render integration */
+.live-bay.has-photo{background:radial-gradient(ellipse at 68% 42%,rgba(115,11,23,.45),transparent 48%),linear-gradient(135deg,#18191b,#0e0f10 62%)}
+.live-bay.has-photo::before{display:none}
+.live-bay.has-photo::after{display:none}
+.bay-render{position:absolute;inset:auto -6% -5% auto;width:124%;height:auto;max-width:none;object-fit:contain;z-index:1;pointer-events:none;filter:drop-shadow(0 26px 55px rgba(0,0,0,.45))}
+.bay-overlay{z-index:2;background:linear-gradient(90deg,rgba(11,12,13,.8),rgba(11,12,13,.12));padding:16px 18px 14px 0;max-width:52%}
+.empty-bay.has-photo .bay-center strong{font-size:clamp(42px,4.7vw,74px)}
+.empty-bay.has-photo .bay-center span{color:#cacfd1}
+.render-card{border:1px solid #474b4d;background:#131618;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.render-card-frame{position:relative;min-height:240px;background:radial-gradient(ellipse at 65% 35%,rgba(164,15,39,.3),transparent 45%),#070809;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.render-card.wide .render-card-frame{min-height:280px}
+.render-card-frame img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.5))}
+.render-card figcaption{display:flex;justify-content:space-between;gap:20px;align-items:end;padding:17px 20px;background:#0e1011}
+.render-card figcaption .mono{color:#9aa2a4}
+.render-card figcaption strong{font:300 clamp(24px,2.1vw,38px)/.95 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:#f0f1f2;text-align:right}
+.road-tech-photo{position:relative;display:flex;align-items:center;justify-content:center;min-height:350px;background:radial-gradient(circle at 70% 38%,rgba(164,15,39,.28),transparent 32%),linear-gradient(150deg,#16181a,#0b0c0d 60%);overflow:hidden;border:1px solid #2a2f32}
+.road-photo-stage{position:relative;width:100%;height:100%;min-height:350px}
+.road-render{position:absolute;display:block;height:auto;max-width:none;object-fit:contain;filter:drop-shadow(0 18px 38px rgba(0,0,0,.48))}
+.road-render-front{width:58%;left:2%;bottom:-2%}
+.road-render-float{width:40%;right:-2%;top:8%;opacity:.92;mask-image:linear-gradient(90deg,transparent 0%,#000 12%,#000 100%)}
+.editorial-with-render{align-items:stretch}
+.render-feature{position:relative;border:1px solid #43484b;background:radial-gradient(ellipse at 60% 45%,rgba(164,15,39,.2),transparent 44%),#0c0d0e;overflow:hidden;min-height:520px}
+.render-feature-tall .render-feature-image{position:absolute;inset:6% -4% 0 auto;width:110%;height:auto;max-width:none;object-fit:contain;filter:drop-shadow(0 22px 46px rgba(0,0,0,.54))}
+.render-feature-caption{position:absolute;left:24px;bottom:24px;z-index:2;max-width:45%}
+.render-feature-caption .mono{color:#a6adb0;display:block;margin-bottom:16px}
+.render-feature-caption strong{font:300 clamp(43px,4.4vw,82px)/.88 var(--display);letter-spacing:-.03em;text-transform:uppercase}
+.leadership-showcase,.timeline-render-band{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin:36px 0 44px}
+.timeline-render-band.compact{margin-top:32px;margin-bottom:28px}
+.sponsor-render-stage{padding-top:0}
+.render-banner{position:relative;min-height:360px;border:1px solid #474b4d;background:linear-gradient(120deg,#0d0f10,#181a1d 65%);overflow:hidden}
+.render-banner-image{position:absolute;right:-8%;bottom:-4%;width:72%;height:auto;max-width:none;display:block;filter:drop-shadow(0 22px 46px rgba(0,0,0,.58))}
+.render-banner-copy{position:relative;z-index:2;padding:42px;max-width:52%}
+.merch-render-stage{position:relative;min-height:330px;border:1px solid #8f9894;background:radial-gradient(circle at 72% 40%,rgba(190,25,45,.22),transparent 35%),#d4d5d0;overflow:hidden}
+.merch-render-image{position:absolute;right:-6%;bottom:-1%;width:68%;height:auto;max-width:none;display:block;filter:drop-shadow(0 24px 38px rgba(0,0,0,.25))}
+.merch-render-copy{position:relative;z-index:2;padding:32px;max-width:42%}
+.merch-render-copy .mono{color:#62696b;display:block;margin-bottom:12px}
+.merch-render-copy strong{font:300 clamp(43px,4.8vw,76px)/.9 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:#101315}
+@media(max-width:1180px){.bay-render{width:135%;right:-12%}.render-feature-caption{max-width:52%}.render-banner-image{width:82%;right:-14%}.render-banner-copy{max-width:58%}}
+@media(max-width:880px){.bay-render{position:absolute;right:-5%;bottom:-3%;width:120%}.bay-overlay{max-width:68%}.leadership-showcase,.timeline-render-band{grid-template-columns:1fr}.render-feature{min-height:420px}.render-feature-tall .render-feature-image{width:112%;right:-14%;bottom:0}.render-feature-caption{max-width:65%}.road-photo-stage{min-height:280px}.road-render-front{width:78%;left:-7%;bottom:-1%}.road-render-float{width:54%;right:-8%;top:12%}.render-banner{min-height:300px}.render-banner-image{width:90%;right:-20%;bottom:-2%}.render-banner-copy{max-width:65%;padding:32px}.merch-render-stage{min-height:280px}.merch-render-image{width:82%;right:-18%}.merch-render-copy{max-width:55%}}
+@media(max-width:570px){.bay-render{width:145%;right:-24%;bottom:2%}.bay-overlay{max-width:76%;padding-right:8px}.road-tech-photo,.road-photo-stage{min-height:240px}.road-render-front{width:98%;left:-18%;bottom:-2%}.road-render-float{display:none}.render-feature{min-height:330px}.render-feature-caption{max-width:76%}.render-feature-tall .render-feature-image{width:125%;right:-24%;bottom:2%}.render-banner{min-height:255px}.render-banner-image{width:110%;right:-42%;bottom:0}.render-banner-copy{max-width:78%;padding:24px}.merch-render-stage{min-height:240px}.merch-render-image{width:108%;right:-38%;bottom:-2%}.merch-render-copy{max-width:68%;padding:24px}.render-card figcaption{display:block}.render-card figcaption strong{text-align:left;display:block;margin-top:10px}}

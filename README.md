@@ -86,3 +86,12 @@ Hosting may fit within Cloudflare Pages' free tier and Pages CMS has a hosted Gi
 - Public merchandising copy removed all mention of print-on-demand, inventory, suppliers, pricing operations and shipping.
 - Futuristic Oxanium and Chakra Petch typefaces loaded via Google Fonts; external fonts require a network connection and fall back to system sans.
 - **Install**: replace only the `red-riot-racing` folder in your checked-out `redesign-preview` branch; `.pages.yml` stays at repository root.
+
+
+## V4 design update (November 2026)
+- Dark-first background system: obsidian + charcoal + graphite, never full-width white/cream sections.
+- White/off-white for typography; red for strategic accents and the sponsorship hero band.
+- Sponsor-related headlines use **BE PART OF THE RIOT.**; descriptions and functional controls remain for usability.
+- Retains site.json / Pages CMS content, official social links, featured Instagram post, and Formula SAE information link.
+- Copy the `red-riot-racing/` directory to the matching subdirectory in the GitHub repository; keep `.pages.yml` at repository root.
+- Use the `redesign-preview` branch and check deployment visually before merging.
