@@ -76,3 +76,13 @@ Hosting may fit within Cloudflare Pages' free tier and Pages CMS has a hosted Gi
 - Pages CMS quick start: https://pagescms.org/docs/quick-start/
 - Pages CMS configuration: https://pagescms.org/docs/configuration/
 - Cloudflare Pages static HTML: https://developers.cloudflare.com/pages/framework-guides/deploy-anything/
+
+
+## V3 visual revisions (November 2026)
+- New six-item responsive DESIGN / DEVELOP / FABRICATE / TEST / COMPETE / REFINE process band (no clipped scrolling words).
+- Home Road to 2028 rebuilt with a complete year and intentional team-car placeholder; no third-party car images.
+- Sponsorship headline rebuilt as thin BE PART OF plus bold italic futuristic THE RIOT, responsive and collision-free.
+- Leadership statement vertically spaced with a futuristic oblique PEOPLE.
+- Public merchandising copy removed all mention of print-on-demand, inventory, suppliers, pricing operations and shipping.
+- Futuristic Oxanium and Chakra Petch typefaces loaded via Google Fonts; external fonts require a network connection and fall back to system sans.
+- **Install**: replace only the `red-riot-racing` folder in your checked-out `redesign-preview` branch; `.pages.yml` stays at repository root.
