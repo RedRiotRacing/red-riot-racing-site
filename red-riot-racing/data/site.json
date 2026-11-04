@@ -8,8 +8,8 @@
   "about_description": "Red Riot Racing is a student Formula SAE team based at McPherson College in McPherson, Kansas. We are building our program from the ground up as we prepare to compete officially in 2028.",
   "mission_statement": "",
   "team_story": "",
-  "car_description": "Original Red Riot Racing renderings are now featured throughout the website. These visuals represent the current car imagery collection and are presented without altering the vehicle itself.",
-  "car_image": "/media/car-side-profile.png",
+  "car_description": "",
+  "car_image": "",
   "sponsorship_packet_url": "",
   "sponsorship_email": "",
   "general_email": "",
@@ -21,37 +21,5 @@
   "contact_note": "",
   "footer_note": "Student Formula SAE team based at McPherson College.",
   "instagram_handle": "bulldogs_fsae",
-  "instagram_post_url": "https://www.instagram.com/p/DdZ5MH_kUa-/",
-  "car_gallery": [
-    {
-      "id": "side",
-      "src": "/media/car-side-profile.png",
-      "alt": "Red Riot Racing car side profile render"
-    },
-    {
-      "id": "front3q",
-      "src": "/media/car-front-three-quarter.png",
-      "alt": "Red Riot Racing car front three-quarter render"
-    },
-    {
-      "id": "rear3q",
-      "src": "/media/car-rear-three-quarter.png",
-      "alt": "Red Riot Racing car rear three-quarter render"
-    },
-    {
-      "id": "opp3q",
-      "src": "/media/car-opposite-three-quarter.png",
-      "alt": "Red Riot Racing car opposite front three-quarter render"
-    },
-    {
-      "id": "front",
-      "src": "/media/car-front-head-on.png",
-      "alt": "Red Riot Racing car head-on render"
-    },
-    {
-      "id": "hero",
-      "src": "/media/car-wide-hero.png",
-      "alt": "Red Riot Racing car hero render"
-    }
-  ]
+  "instagram_post_url": "https://www.instagram.com/p/DdZ5MH_kUa-/"
 }
