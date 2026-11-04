@@ -1,24 +1,24 @@
-# Red Riot Racing — modern redesign preview
+# Red Riot Racing — Monday presentation edition
 
-This package preserves the **existing GitHub repository structure**: the website is inside `red-riot-racing/`. The Cloudflare Pages root directory should remain `red-riot-racing`, with no build command and output directory `.`.
+Original website layout preserved, with additional red accents, sponsor-only “Be Part of the Riot” CTA, Merch coming-soon page, updated SAE link, and Instagram profile + feed placeholder.
 
-## Preview safely
-1. **Do not replace the live main branch yet.** Create a branch named `redesign-preview` in GitHub.
-2. Upload the contents of this ZIP to that branch, keeping `red-riot-racing/` as the website directory and `.pages.yml` at the repository root.
-3. Cloudflare Pages (Git-connected) can create a preview deployment for this branch. Check the preview URL in Cloudflare > Deployments.
-4. Once approved, merge the preview branch into `main`. Your existing Cloudflare project and domain remain the same.
+## Deploy safely
 
-## Existing site content
-- Site data remains in `red-riot-racing/data/`. No sponsor names, leaders, emails, social links, or car photos were invented.
-- The temporary `RR.` wordmark is text only. Replace it with the official team logo when ready.
-- No external photographs or generated vehicle images are included. All visual treatments are CSS, HTML, and a simple original SVG favicon.
-- Google Fonts are requested from Google at runtime; for a fully self-hosted site, replace with locally licensed font files.
-- Pages CMS config `.pages.yml` lives at **repository root** and its data paths point into `red-riot-racing/`, as Pages CMS expects.
+This ZIP contains a `red-riot-racing/` folder, root `.pages.yml` and root `README.md`. Replace the **existing `red-riot-racing` folder** in your local GitHub repository while on `redesign-preview`; copy `.pages.yml` to the repository root (Finder hides dotfiles; Cmd+Shift+. usually reveals them). Commit and push `redesign-preview` for a Cloudflare branch preview. Do **not** merge into `main` until reviewed. Cloudflare Pages root directory stays `red-riot-racing` and build output stays `.`.
 
-## Files
-- `red-riot-racing/assets/styles.css`: modern responsive layout
-- `red-riot-racing/assets/app.js`: all page templates and menu interactions
-- `red-riot-racing/data/*.json`: editable content
-- `.pages.yml`: CMS configuration
+## Monday checklist
 
-Note: The original `red-riot-racing/admin/` is preserved for compatibility; Pages CMS login is through https://app.pagescms.org/ once GitHub authorization is configured.
+- Replace temporary text-based logo with approved team logo.
+- Add approved leadership names, roles, and portraits.
+- Add approved mission and team text.
+- Add sponsor logos only after confirmation.
+- Add confirmed social URLs (Instagram is temporarily @bulldogs_fsae).
+- Add team-owned photos only.
+- Finalize merch designs, test samples, establish fulfillment/checkout and approval to receive proceeds before opening store.
+- For automatic newest Instagram post: connect an approved feed service or authorized Instagram API integration; no live feed is claimed or active in this ZIP.
+
+The Pages CMS configuration is at **repository root**, and its collection paths point into `red-riot-racing/data/`. Content remains editable as JSON even before CMS authorization.
+
+
+## Instagram post embed
+The Updates page now embeds the official Instagram post at https://www.instagram.com/p/DdZ5MH_kUa-/ using Instagram’s embed.js. If Instagram blocks the embed (privacy settings, tracking blockers, browser restrictions), visitors can open the post using the link in the fallback. This is a manually selected featured post, NOT an automatic latest-post feed. To change it, edit `red-riot-racing/data/site.json` -> `instagram_post_url` (and `instagram_url`/`instagram_handle` if the username changes).
