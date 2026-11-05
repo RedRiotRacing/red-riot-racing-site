@@ -1,0 +1,1 @@
+Final V4 patch: Added positive spacing before the red period after FUTURE in the homepage hero. No other website files or styling altered.

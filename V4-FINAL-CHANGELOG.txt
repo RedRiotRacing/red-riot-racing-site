@@ -1,0 +1,15 @@
+RED RIOT RACING | V4 FINAL REVISIONS
+
+Base: V4 Dark Edition with the previous REFINE typography correction.
+
+1. REFINE retains the matching bold, angled TEST treatment in the red process band.
+2. Underlines beneath THE RIOT. are solid Riot Red (#E32636), without pink/white ends.
+3. The period in all styled THE RIOT. sponsorship headlines is Riot Red.
+4. The sponsorship page CONTACT THE TEAM button is Riot Red with white text and darker-red hover.
+5. The sponsorship-page OUR PARTNERS grid has been replaced by six vertically stacked, centered tiers:
+   Title Sponsor (white line), Red Sponsor (red), Platinum (platinum), Gold (gold), Silver (silver), Bronze (bronze).
+   Tier numbers removed; heading sizes decrease with rank. The largest Title Sponsor is first.
+6. Sponsor records can be added in data/sponsors.json using tier values Title, Red, Platinum, Gold, Silver, or Bronze; names/logos/links appear within the correct section.
+7. No car rendering images included. V4 dark styling, pages, social links, merch, and Formula SAE link retained.
+
+Deployment: extract ZIP; replace red-riot-racing folder on redesign-preview; keep .pages.yml at repository root.
