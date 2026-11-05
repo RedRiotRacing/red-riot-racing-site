@@ -1,0 +1,12 @@
+RED RIOT RACING — V4 FINAL POLISH
+
+Foundation: V4 with sponsor tiers and logo placements. No car imagery.
+- Increased contrast of punctuation and underline on red sponsorship backgrounds (near-white).
+- Exclusive Title Sponsor section: singular title, one available placeholder and one visible listed title sponsor maximum.
+- Kept existing sponsor tier font styling while color-matching tier headings to their divider lines.
+- Prevented headline periods from wrapping away from the preceding word in common hardcoded headings, and normalized punctuation styling.
+- Corrected Contact page PROGRESS period to matching font and Riot Red.
+- Merch headline RIOT and its period now Riot Red; other headline text remains white.
+- Preserved corrected REFINE font, red sponsorship contact button, social links, merch content, and rest of V4.
+
+Deployment: replace red-riot-racing directory on redesign-preview branch. Copy .pages.yml to repository root if needed.

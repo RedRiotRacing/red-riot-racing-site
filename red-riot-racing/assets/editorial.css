@@ -183,3 +183,36 @@ body{background:var(--black);color:var(--white)}
 .sponsor-tier-bronze .tier-logo-placeholder,.sponsor-tier-silver .tier-logo-placeholder{width:clamp(125px,17vw,225px);min-height:clamp(90px,9vw,135px)}
 .sponsor-tier-title{padding-top:clamp(45px,5vw,75px)}
 @media(max-width:570px){.tier-logo-placements{gap:9px}.tier-logo-placeholder{width:calc(50% - 5px);min-height:90px;gap:8px}.tier-logo-placeholder .mono{font-size:8px}.sponsor-tier-title .tier-logo-placeholder{width:calc(50% - 5px);min-height:135px}.sponsor-tier-red .tier-logo-placeholder,.sponsor-tier-platinum .tier-logo-placeholder,.sponsor-tier-silver .tier-logo-placeholder,.sponsor-tier-bronze .tier-logo-placeholder{width:calc(50% - 5px);min-height:94px}.tier-logo-placeholder-symbol{font-size:23px}}
+
+
+/* V4 Final refinements — November 2026 */
+/* Same lettering, tier-specific color only. */
+.sponsor-tier-title h3{color:#F0F1F2}
+.sponsor-tier-red h3{color:#E32636}
+.sponsor-tier-platinum h3{color:#C9D0D8}
+.sponsor-tier-gold h3{color:#D5AE52}
+.sponsor-tier-silver h3{color:#9DA7B1}
+.sponsor-tier-bronze h3{color:#A77553}
+/* There can only be one featured title logo placement. */
+.sponsor-tier-title .tier-logo-placements{justify-content:center}
+.sponsor-tier-title .tier-logo-placeholder{width:min(100%,375px)}
+/* Prevent punctuation breaks and ensure punctuation inherits the heading face. */
+.punctuation-unit{display:inline-block;white-space:nowrap;max-width:100%;font-family:inherit;font-style:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit}
+.punctuation-unit>.red,.punctuation-unit>.riot-dot,.merch-riot>.red,.contact-layout .rich>.red{display:inline!important;position:static!important;float:none!important;transform:none!important;vertical-align:baseline!important;font:inherit!important;letter-spacing:inherit!important;color:#E32636!important;white-space:nowrap}
+.riot-focus .punctuation-unit{display:inline!important;font:inherit!important;letter-spacing:inherit!important;white-space:nowrap}
+.riot-focus .riot-dot{font:inherit!important;letter-spacing:inherit!important;display:inline!important;vertical-align:baseline!important}
+/* The dark-page sponsorship accent stays Riot Red. */
+.riot-focus::after{background:#E32636!important;box-shadow:none!important}
+/* On red background, vivid near-white accent line and dot remain visible. */
+.closing .riot-focus::after{background:#FFE9EE!important;box-shadow:none!important;opacity:1!important;height:3px!important}
+.closing .riot-dot{color:#FFE9EE!important}
+/* Red CTA buttons remain red with white letters. */
+.sponsor-detail .sponsor-contact-button{background:#E32636!important;color:#fff!important}
+/* The merch headline's emphasized RIOT retains its same current font. */
+.merch-riot,.merch-riot .red{color:#E32636!important}
+/* Ensure the punctuation after PROGRESS matches the word's font and sizing. */
+.contact-layout .rich .red{font:inherit!important;color:#E32636!important;letter-spacing:inherit!important}
+@media(max-width:570px){
+  .sponsor-tier-title .tier-logo-placeholder{width:min(100%,375px)!important}
+  .riot-focus{max-width:100%;padding-right:.2em}
+}
