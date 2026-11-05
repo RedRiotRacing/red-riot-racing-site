@@ -216,3 +216,17 @@ body{background:var(--black);color:var(--white)}
   .sponsor-tier-title .tier-logo-placeholder{width:min(100%,375px)!important}
   .riot-focus{max-width:100%;padding-right:.2em}
 }
+
+
+/* Final homepage punctuation spacing correction.
+   The original .hero-title .period had margin-left:-.05em, causing the
+   period to touch the final E in FUTURE. No typography/layout changes. */
+.hero-title .period {
+  display: inline-block;
+  position: static;
+  margin-left: .065em;
+  letter-spacing: 0;
+  transform: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
