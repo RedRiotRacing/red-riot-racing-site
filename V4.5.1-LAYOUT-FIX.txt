@@ -1,0 +1,11 @@
+Red Riot Racing V4.5.1 — CTA Layout Correction
+
+Based on V4.5 Button & Navigation Refinement.
+- Corrected the red closing “BE PART OF THE RIOT.” section: headline, supporting text, and CTA have controlled vertical spacing and one common alignment edge.
+- Prevented conflicting center/left alignment rules from fighting at tablet and mobile widths.
+- Kept sponsorship buttons attached to their associated copy blocks.
+- Kept Road to 2028 CTA immediately after the roadmap description.
+- Preserved V4.5 white/red hover inversion and navigation treatment.
+- No changes to page content, official branding placeholders, site colors, sponsor tier data, or fonts.
+
+QA note: CSS/package and JavaScript syntax checked. A rendered browser QA check was unavailable in this environment; review on Cloudflare preview before merging.
