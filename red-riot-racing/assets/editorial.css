@@ -230,3 +230,88 @@ body{background:var(--black);color:var(--white)}
   vertical-align: baseline;
   white-space: nowrap;
 }
+
+
+/* V4.5 — focused navigation and CTA refinements; page layouts and typography retained */
+/* Bright, invertible CTAs with accessible focus styling and no hover-only dependency. */
+.button,.nav-sponsor{transition:background-color .22s ease,color .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}
+.button{border:1px solid transparent;text-align:center;text-decoration:none}
+.button:hover,.button:focus-visible{background:#f0f1f2;color:#14171b;transform:translateY(-1px)}
+.button.button-white,.button.pale{background:#f0f1f2;color:#15181e;border-color:#f0f1f2}
+.button.button-white:hover,.button.button-white:focus-visible,.button.pale:hover,.button.pale:focus-visible{background:#e32636;color:#fff;border-color:#e32636}
+.button.ghost{background:transparent;color:#f0f1f2;border:1px solid #878b91}
+.button.ghost:hover,.button.ghost:focus-visible{background:#e32636;color:#fff;border-color:#e32636}
+/* Sponsorship red button participates in the same inversion behavior. */
+.sponsor-detail .sponsor-contact-button,.sponsor-detail .button.sponsor-contact-button{background:#e32636!important;color:#fff!important;border-color:#e32636!important}
+.sponsor-detail .sponsor-contact-button:hover,.sponsor-detail .sponsor-contact-button:focus-visible,.sponsor-detail .button.sponsor-contact-button:hover{background:#f0f1f2!important;color:#15181e!important;border-color:#f0f1f2!important}
+.closing .button{background:#f0f1f2;color:#15181e;border-color:#f0f1f2}
+.closing .button:hover,.closing .button:focus-visible{background:#15181e;color:#fff;border-color:#15181e}
+/* Position CTAs as part of their copy groups rather than separate corner decorations. */
+.hero-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:24px;margin-top:38px}
+.hero-bottom .body-copy{max-width:385px}
+.hero-bottom .button{align-self:flex-start}
+.road-inline-cta{margin-top:27px}
+.road-inline-cta .button{min-width:230px}
+.road-outro{justify-content:flex-start}
+.partner-copy>.button{margin-top:25px}
+.sponsor-detail>div:last-child>.button{margin-top:12px}
+.closing .foot{align-items:center;gap:28px}
+.closing .foot .button{flex:0 0 auto}
+/* Place final sponsor calls to action centrally in their full-width red band. */
+.closing .foot{justify-content:center;flex-wrap:wrap}
+.closing .foot p{max-width:390px}
+/* Make the navigation look considered without changing its branding. */
+.nav-links{margin-left:auto;align-items:center;gap:clamp(12px,1.45vw,26px)}
+.nav-links a:not(.nav-sponsor){position:relative;padding:11px 0;transition:color .18s ease}
+.nav-links a:not(.nav-sponsor)::after{content:'';position:absolute;bottom:3px;left:0;width:100%;height:2px;background:#e32636;transform:scaleX(0);transform-origin:left;transition:transform .22s ease;margin-top:0}
+.nav-links a.current::after,.nav-links a:not(.nav-sponsor):hover::after,.nav-links a:not(.nav-sponsor):focus-visible::after{transform:scaleX(1)}
+.nav-sponsor{border-color:#e32636;background:transparent;color:#f0f1f2;padding:12px 15px}
+.nav-sponsor:hover,.nav-sponsor:focus-visible{background:#e32636;color:#fff}
+/* Text-link CTAs: a consistent controlled highlight on interaction. */
+.view-link{transition:color .2s ease,border-color .2s ease,gap .2s ease}
+.view-link:hover,.view-link:focus-visible{color:#e32636;border-color:#e32636;gap:23px}
+@media(max-width:880px){
+ .nav-links{margin-left:0;gap:15px}
+ .nav-links a:not(.nav-sponsor){align-self:flex-start;padding:7px 0}
+ .hero-bottom{display:flex;flex-direction:column;align-items:flex-start}
+ .closing .foot{justify-content:flex-start}
+}
+@media(max-width:570px){
+ .hero-bottom{margin-top:34px;display:flex}
+ .hero-bottom .button{margin-top:0;max-width:100%}
+ .road-inline-cta .button{min-width:0;max-width:100%}
+ .closing .foot{display:flex;flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){.button,.nav-sponsor,.nav-links a:not(.nav-sponsor)::after{transition:none!important}.button:hover{transform:none}}
+
+/* V4.5.1 — CTA alignment correction. Keep the approved V4 typography and color palette. */
+/* The closing call-to-action has a deliberate left edge and predictable vertical rhythm. */
+.closing .riot-headline{width:100%;max-width:100%;align-items:flex-start;gap:clamp(18px,2.5vw,34px);margin:clamp(30px,4vw,58px) 0 clamp(32px,4vw,65px)}
+.closing .riot-prefix{font-size:clamp(45px,9vw,158px);max-width:100%;}
+.closing .riot-focus{font-size:clamp(44px,8.5vw,148px);max-width:100%;margin-left:clamp(0px,2vw,22px);}
+/* Prevent the paragraph and button from pulling against opposite corners. */
+.closing .foot{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:clamp(18px,2.4vw,30px);max-width:570px;margin:0;}
+.closing .foot p{max-width:570px;margin:0;line-height:1.7;}
+.closing .foot .button{align-self:flex-start;flex:0 0 auto;margin:0;min-width:0;}
+/* Sponsorship content buttons follow their own copy rather than floating beside or below cards. */
+.partner-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.partner-copy>p{margin:26px 0 0}
+.partner-copy>.button{align-self:flex-start;margin:24px 0 0}
+.sponsor-detail>div:last-child{min-width:0}
+.sponsor-detail>div:last-child>.button{display:inline-flex;max-width:100%;margin:18px 0 0}
+/* CTA on the roadmap stays attached to the paragraph. */
+.road-lead-rule{min-width:0}
+.road-inline-cta{margin-top:22px}
+.road-inline-cta .button{min-width:0;max-width:100%}
+@media(max-width:880px){
+ .closing .riot-prefix{font-size:clamp(44px,9.5vw,82px)}
+ .closing .riot-focus{font-size:clamp(43px,9.3vw,81px)}
+ .closing .foot{align-items:flex-start;justify-content:flex-start;}
+}
+@media(max-width:570px){
+ .closing .riot-headline{margin:32px 0 36px;gap:18px}
+ .closing .riot-prefix{font-size:clamp(33px,9.3vw,53px)}
+ .closing .riot-focus{font-size:clamp(31px,8.9vw,50px);margin-left:0}
+ .closing .foot{gap:20px}
+ .closing .foot .button,.partner-copy>.button,.road-inline-cta .button{max-width:100%;white-space:normal;text-align:center}
+}
