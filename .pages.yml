@@ -1,0 +1,81 @@
+media:
+  input: red-riot-racing/media
+  output: /media
+  rename: safe
+content:
+  - name: settings
+    label: Website content & links
+    type: file
+    path: red-riot-racing/data/site.json
+    format: json
+    fields:
+      - { name: team_name, label: Team name, type: string }
+      - { name: tagline, label: Homepage headline, type: string }
+      - { name: eyebrow, label: Intro line, type: string }
+      - { name: hero_description, label: Homepage intro text, type: text }
+      - { name: competition_year, label: Competition year, type: string }
+      - { name: about_heading, label: About section heading, type: string }
+      - { name: about_description, label: About description, type: text }
+      - { name: mission_statement, label: Official mission statement (leave blank until approved), type: text }
+      - { name: team_story, label: Our story (optional), type: text }
+      - { name: car_description, label: Car / design details (optional), type: text }
+      - { name: car_image, label: Team car photo (optional), type: image }
+      - { name: sponsorship_packet_url, label: Sponsorship packet URL or uploaded PDF path, type: string }
+      - { name: sponsorship_email, label: Sponsorship email, type: string }
+      - { name: general_email, label: General contact email, type: string }
+      - { name: instagram_url, label: Instagram URL, type: string }
+      - { name: instagram_post_url, label: Featured Instagram post URL, type: string }
+      - { name: instagram_handle, label: Instagram handle, type: string }
+      - { name: facebook_url, label: Facebook URL, type: string }
+      - { name: tiktok_url, label: TikTok URL, type: string }
+      - { name: youtube_url, label: YouTube URL, type: string }
+      - { name: linkedin_url, label: LinkedIn URL, type: string }
+      - { name: contact_note, label: Contact page note, type: text }
+      - { name: footer_note, label: Footer description, type: text }
+  - name: leadership
+    label: Leadership
+    type: file
+    path: red-riot-racing/data/leadership.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Full name, type: string, required: true }
+      - { name: role, label: Team role, type: string, required: true }
+      - { name: bio, label: Short bio, type: text }
+      - { name: image, label: Portrait, type: image }
+      - { name: order, label: Display order, type: number }
+  - name: sponsors
+    label: Sponsors
+    type: file
+    path: red-riot-racing/data/sponsors.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Sponsor name, type: string, required: true }
+      - { name: logo, label: Sponsor logo, type: image }
+      - { name: website, label: Sponsor website, type: string }
+      - { name: tier, label: Sponsorship tier (optional), type: string }
+      - { name: description, label: Description, type: text }
+      - { name: order, label: Display order, type: number }
+  - name: updates
+    label: Team updates
+    type: file
+    path: red-riot-racing/data/updates.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: Update title, type: string, required: true }
+      - { name: date, label: Publication date (YYYY-MM-DD), type: date, required: true }
+      - { name: summary, label: Update text, type: text }
+      - { name: image, label: Update photo, type: image }
+  - name: milestones
+    label: Road to 2028 milestones
+    type: file
+    path: red-riot-racing/data/milestones.json
+    format: json
+    list: true
+    fields:
+      - { name: year, label: Year / date label, type: string, required: true }
+      - { name: title, label: Milestone, type: string, required: true }
+      - { name: description, label: Detail, type: text }
+      - { name: status, label: Status (planned/in-progress/complete), type: string }
