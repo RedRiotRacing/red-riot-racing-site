@@ -1,0 +1,1 @@
+V4.7 Updates page editorial layout: month above large year, final two year digits Riot Red, clean white vertical separator, title and description together, CMS data preserved. No changes to .pages.yml or data files.
