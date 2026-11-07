@@ -315,3 +315,9 @@ body{background:var(--black);color:var(--white)}
  .closing .foot{gap:20px}
  .closing .foot .button,.partner-copy>.button,.road-inline-cta .button{max-width:100%;white-space:normal;text-align:center}
 }
+
+/* Pages CMS custom text overrides: inherit current fonts and spacing */
+.cms-custom-headline .cms-headline-line{display:block;max-width:100%;white-space:normal;overflow-wrap:normal}
+.cms-custom-period{color:#e32636;display:inline-block;margin-inline-start:.075em;white-space:nowrap}
+.cms-announcement{background:#e32636;color:#fff;text-align:center;padding:10px 20px;font:500 12px/1.5 'Chakra Petch',sans-serif;letter-spacing:.1em;text-transform:uppercase}
+[hidden]{display:none!important}

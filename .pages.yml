@@ -1,0 +1,650 @@
+media:
+  input: red-riot-racing/media
+  output: /media
+  rename: safe
+content:
+- name: settings
+  label: Website content & links
+  type: file
+  path: red-riot-racing/data/site.json
+  format: json
+  fields:
+  - name: team_name
+    label: Team name
+    type: string
+  - name: tagline
+    label: Homepage headline
+    type: string
+  - name: eyebrow
+    label: Intro line
+    type: string
+  - name: hero_description
+    label: Homepage intro text
+    type: text
+  - name: competition_year
+    label: Competition year
+    type: string
+  - name: about_heading
+    label: About section heading
+    type: string
+  - name: about_description
+    label: About description
+    type: text
+  - name: mission_statement
+    label: Official mission statement (leave blank until approved)
+    type: text
+  - name: team_story
+    label: Our story (optional)
+    type: text
+  - name: car_description
+    label: Car / design details (optional)
+    type: text
+  - name: car_image
+    label: Team car photo (optional)
+    type: image
+  - name: sponsorship_packet_url
+    label: Sponsorship packet URL or uploaded PDF path
+    type: string
+  - name: sponsorship_email
+    label: Sponsorship email
+    type: string
+  - name: general_email
+    label: General contact email
+    type: string
+  - name: instagram_url
+    label: Instagram URL
+    type: string
+  - name: instagram_post_url
+    label: Featured Instagram post URL
+    type: string
+  - name: instagram_handle
+    label: Instagram handle
+    type: string
+  - name: facebook_url
+    label: Facebook URL
+    type: string
+  - name: tiktok_url
+    label: TikTok URL
+    type: string
+  - name: youtube_url
+    label: YouTube URL
+    type: string
+  - name: linkedin_url
+    label: LinkedIn URL
+    type: string
+  - name: contact_note
+    label: Contact page note
+    type: text
+  - name: footer_note
+    label: Footer description
+    type: text
+- name: leadership
+  label: Leadership
+  type: file
+  path: red-riot-racing/data/leadership.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Full name
+    type: string
+    required: true
+  - name: role
+    label: Team role
+    type: string
+    required: true
+  - name: bio
+    label: Short bio
+    type: text
+  - name: image
+    label: Portrait
+    type: image
+  - name: order
+    label: Display order
+    type: number
+- name: sponsors
+  label: Sponsors
+  type: file
+  path: red-riot-racing/data/sponsors.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Sponsor name
+    type: string
+    required: true
+  - name: logo
+    label: Sponsor logo
+    type: image
+  - name: website
+    label: Sponsor website
+    type: string
+  - name: tier
+    label: Sponsor tier
+    type: select
+    options:
+      values:
+      - Title Sponsor
+      - Red Sponsor
+      - Platinum Sponsor
+      - Gold Sponsor
+      - Silver Sponsor
+      - Bronze Sponsor
+  - name: description
+    label: Description
+    type: text
+  - name: order
+    label: Display order
+    type: number
+- name: updates
+  label: Team updates
+  type: file
+  path: red-riot-racing/data/updates.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Update title
+    type: string
+    required: true
+  - name: date
+    label: Publication date (YYYY-MM-DD)
+    type: date
+    required: true
+  - name: summary
+    label: Update text
+    type: text
+  - name: image
+    label: Update photo
+    type: image
+- name: milestones
+  label: Road to 2028 milestones
+  type: file
+  path: red-riot-racing/data/milestones.json
+  format: json
+  list: true
+  fields:
+  - name: year
+    label: Year / date label
+    type: string
+    required: true
+  - name: title
+    label: Milestone
+    type: string
+    required: true
+  - name: description
+    label: Detail
+    type: text
+  - name: status
+    label: Status (planned/in-progress/complete)
+    type: string
+- name: editor_home
+  label: Homepage — layout content
+  type: file
+  path: red-riot-racing/data/editor-home.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Hero headline (use | for line breaks)
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_eyebrow
+    label: Hero small label
+    type: string
+  - name: hero_description
+    label: Hero introduction
+    type: text
+  - name: hero_button
+    label: Hero button text
+    type: string
+    description: Leave blank to retain the current value.
+  - name: hero_button_url
+    label: Hero button destination
+    type: string
+    description: Leave blank to retain the current value.
+  - name: intro_heading
+    label: Program section heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: intro_description
+    label: Program summary
+    type: text
+  - name: intro_button
+    label: Program button text
+    type: string
+    description: Leave blank to retain the current value.
+  - name: intro_button_url
+    label: Program button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: vehicle_heading
+    label: Vehicle heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: vehicle_description
+    label: Vehicle introduction
+    type: text
+  - name: road_heading
+    label: Roadmap heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: road_description
+    label: Roadmap summary
+    type: text
+  - name: sponsor_description
+    label: Sponsor introduction
+    type: text
+  - name: sponsor_button
+    label: Sponsor button text
+    type: string
+    description: Leave blank to retain the current value.
+  - name: sponsor_button_url
+    label: Sponsor button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: leadership_description
+    label: Leadership introduction
+    type: text
+  - name: updates_description
+    label: Updates introduction
+    type: text
+  - name: merch_description
+    label: Merch teaser description
+    type: text
+  - name: merch_button
+    label: Merch button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: merch_button_url
+    label: Merch button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: closing_description
+    label: Closing sponsorship description
+    type: text
+  - name: closing_button
+    label: Closing sponsor button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: closing_button_url
+    label: Closing sponsor button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: show_program
+    label: Show homepage program section
+    type: boolean
+  - name: show_process
+    label: Show process band
+    type: boolean
+  - name: show_vehicle
+    label: Show vehicle section
+    type: boolean
+  - name: show_roadmap
+    label: Show roadmap
+    type: boolean
+  - name: show_sponsors
+    label: Show sponsor preview
+    type: boolean
+  - name: show_people
+    label: Show leadership and updates preview
+    type: boolean
+  - name: show_merch
+    label: Show merchandise preview
+    type: boolean
+  - name: show_closing
+    label: Show closing sponsorship banner
+    type: boolean
+- name: editor_about
+  label: About page — layout content
+  type: file
+  path: red-riot-racing/data/editor-about.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Page headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_description
+    label: Hero introduction
+    type: text
+  - name: foundation_heading
+    label: Foundation heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: foundation_description
+    label: Foundation introduction
+    type: text
+  - name: quote
+    label: Quote banner text
+    type: string
+  - name: challenge_heading
+    label: Formula SAE heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: challenge_description
+    label: Formula SAE description
+    type: text
+  - name: formula_button
+    label: Formula SAE button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: formula_button_url
+    label: Formula SAE button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: show_foundation
+    label: Show foundation
+    type: boolean
+  - name: show_quote
+    label: Show quote
+    type: boolean
+  - name: show_challenge
+    label: Show Formula SAE challenge
+    type: boolean
+- name: editor_leadership
+  label: Leadership page — layout content
+  type: file
+  path: red-riot-racing/data/editor-leadership.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Hero headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_description
+    label: Hero description
+    type: text
+  - name: statement_heading
+    label: Leadership statement
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: statement_description
+    label: Statement description
+    type: text
+  - name: show_roster
+    label: Show leadership roster
+    type: boolean
+- name: editor_road
+  label: Road to 2028 — layout content
+  type: file
+  path: red-riot-racing/data/editor-road.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Page headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_description
+    label: Hero description
+    type: text
+  - name: timeline_description
+    label: Timeline introduction
+    type: text
+  - name: vehicle_heading
+    label: Vehicle section headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: vehicle_description
+    label: Vehicle description
+    type: text
+  - name: follow_button
+    label: Follow updates button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: follow_button_url
+    label: Follow updates URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: show_timeline
+    label: Show timeline
+    type: boolean
+  - name: show_vehicle
+    label: Show vehicle showcase
+    type: boolean
+- name: editor_sponsors
+  label: Sponsors page — layout content
+  type: file
+  path: red-riot-racing/data/editor-sponsors.json
+  format: json
+  fields:
+  - name: hero_description
+    label: Page introduction
+    type: text
+  - name: detail_description
+    label: Sponsorship explanation
+    type: text
+  - name: packet_description
+    label: Sponsorship packet note
+    type: text
+  - name: contact_button
+    label: Contact team button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: contact_button_url
+    label: Contact team button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: recognition_description
+    label: Recognition explanation
+    type: text
+  - name: closing_description
+    label: Closing description
+    type: text
+  - name: closing_button
+    label: Closing button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: closing_button_url
+    label: Closing button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: show_recognition
+    label: Show sponsorship tiers
+    type: boolean
+  - name: show_closing
+    label: Show closing banner
+    type: boolean
+- name: editor_updates
+  label: Updates page — layout content
+  type: file
+  path: red-riot-racing/data/editor-updates.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Page headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_description
+    label: Hero description
+    type: text
+  - name: feed_heading
+    label: Instagram panel headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: feed_description
+    label: Instagram introduction
+    type: text
+  - name: journal_heading
+    label: Journal headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: journal_description
+    label: Journal description
+    type: text
+  - name: show_instagram
+    label: Show featured Instagram
+    type: boolean
+  - name: show_journal
+    label: Show journal
+    type: boolean
+- name: editor_merch
+  label: Merch page — layout content
+  type: file
+  path: red-riot-racing/data/editor-merch.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Page headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_description
+    label: Hero introduction
+    type: text
+  - name: collection_heading
+    label: Collection headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: collection_description
+    label: Collection description
+    type: text
+  - name: collection_note
+    label: Coming soon message
+    type: text
+  - name: closing_description
+    label: Closing description
+    type: text
+  - name: closing_button
+    label: Closing button
+    type: string
+    description: Leave blank to retain the current value.
+  - name: closing_button_url
+    label: Closing button URL
+    type: string
+    description: Leave blank to retain the current value.
+  - name: show_products
+    label: Show product placeholders
+    type: boolean
+  - name: show_closing
+    label: Show sponsorship closing banner
+    type: boolean
+- name: editor_contact
+  label: Contact page — layout content
+  type: file
+  path: red-riot-racing/data/editor-contact.json
+  format: json
+  fields:
+  - name: hero_heading
+    label: Page headline
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: hero_description
+    label: Hero introduction
+    type: text
+  - name: general_heading
+    label: General contact heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: general_description
+    label: General contact description
+    type: text
+  - name: social_heading
+    label: Follow/social heading
+    type: string
+    description: Optional override. Use | for a new line, *word* to emphasize. Leave blank to retain the approved
+      headline.
+  - name: social_description
+    label: Social description
+    type: text
+  - name: show_social
+    label: Show social contacts
+    type: boolean
+- name: editor_navigation
+  label: Navigation & menu labels
+  type: file
+  path: red-riot-racing/data/editor-navigation.json
+  format: json
+  fields:
+  - name: top_strip_left
+    label: Top bar left text
+    type: string
+  - name: top_strip_right
+    label: Top bar right text
+    type: string
+  - name: sponsor_button_label
+    label: Menu sponsorship button
+    type: string
+  - name: sponsor_button_url
+    label: Menu sponsorship button link
+    type: string
+  - name: menu
+    label: Navigation items
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: label
+      label: Label
+      type: string
+      required: true
+    - name: href
+      label: Link URL
+      type: string
+      required: true
+    - name: visible
+      label: Show item
+      type: boolean
+- name: editor_site
+  label: Site-wide announcement & SEO
+  type: file
+  path: red-riot-racing/data/editor-site.json
+  format: json
+  fields:
+  - name: site_title_suffix
+    label: Browser title suffix
+    type: string
+  - name: default_meta_description
+    label: Default search description
+    type: text
+  - name: announcement_text
+    label: Announcement message
+    type: string
+  - name: announcement_visible
+    label: Show announcement
+    type: boolean
+  - name: social_links_visible
+    label: Show social links
+    type: boolean
+- name: editor_sponsor_tiers
+  label: Sponsor tier headings
+  type: file
+  path: red-riot-racing/data/editor-sponsor-tiers.json
+  format: json
+  fields:
+  - name: title
+    label: Title Sponsor
+    type: string
+  - name: red
+    label: Red Sponsors
+    type: string
+  - name: platinum
+    label: Platinum Sponsors
+    type: string
+  - name: gold
+    label: Gold Sponsors
+    type: string
+  - name: silver
+    label: Silver Sponsors
+    type: string
+  - name: bronze
+    label: Bronze Sponsors
+    type: string
