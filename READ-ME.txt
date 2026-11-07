@@ -1,0 +1,10 @@
+Red Riot Racing Pages CMS merge conflict fix
+
+1. In GitHub Desktop, leave the current merge in progress.
+2. Click Open in editor for .pages.yml, then close the editor (or use Finder to locate the repo root).
+3. Extract this ZIP. macOS hides .pages.yml by default: press Command+Shift+period in Finder.
+4. Copy the provided .pages.yml to the ROOT of the GitHub repository red-riot-racing-site, replacing the conflicted file (NOT into red-riot-racing/).
+5. Back in GitHub Desktop, mark .pages.yml resolved if necessary. Resolve .DS_Store separately, preferably deleting it.
+6. Continue Merge, then Push origin.
+
+This configuration was reconstructed from the HEAD (redesign-preview) side of your pasted conflict and parses as YAML. It retains 16 CMS content sections.

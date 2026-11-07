@@ -1,0 +1,43 @@
+{
+  "top_strip_left": "McPherson College \u2022 Student Formula SAE program",
+  "top_strip_right": "Building toward competition / 2028",
+  "sponsor_button_label": "BE PART OF THE RIOT",
+  "sponsor_button_url": "/sponsors.html",
+  "menu": [
+    {
+      "label": "Home",
+      "href": "/",
+      "visible": true
+    },
+    {
+      "label": "About",
+      "href": "/about.html",
+      "visible": true
+    },
+    {
+      "label": "Road to 2028",
+      "href": "/journey.html",
+      "visible": true
+    },
+    {
+      "label": "Leadership",
+      "href": "/leadership.html",
+      "visible": true
+    },
+    {
+      "label": "Sponsors",
+      "href": "/sponsors.html",
+      "visible": true
+    },
+    {
+      "label": "Updates",
+      "href": "/updates.html",
+      "visible": true
+    },
+    {
+      "label": "Merch",
+      "href": "/merch.html",
+      "visible": true
+    }
+  ]
+}

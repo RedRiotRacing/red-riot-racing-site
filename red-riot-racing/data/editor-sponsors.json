@@ -1,0 +1,13 @@
+{
+  "hero_description": "",
+  "detail_description": "",
+  "packet_description": "",
+  "contact_button": "",
+  "contact_button_url": "",
+  "recognition_description": "",
+  "closing_description": "",
+  "closing_button": "",
+  "closing_button_url": "",
+  "show_recognition": true,
+  "show_closing": true
+}
