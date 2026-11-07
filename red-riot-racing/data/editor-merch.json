@@ -1,12 +1,6 @@
 {
-  "hero_heading": "",
-  "hero_description": "",
-  "collection_heading": "",
-  "collection_description": "",
-  "collection_note": "",
-  "closing_description": "",
-  "closing_button": "",
-  "closing_button_url": "",
-  "show_products": true,
+  "collection_description": "The basics for a racing fan",
+  "collection_note": "Collection is in the works",
+  "show_products": false,
   "show_closing": true
 }
