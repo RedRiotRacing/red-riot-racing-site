@@ -3,6 +3,7 @@ media:
   output: /media
   rename: safe
 content:
+
 - name: settings
   label: Website content & links
   type: file
