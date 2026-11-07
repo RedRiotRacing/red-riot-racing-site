@@ -38,7 +38,36 @@ function sponsorTierSections(sponsors){
   }).join('')}</div>`;
 }
 function socialLinks(site){const names=[['Instagram',site.instagram_url],['Facebook',site.facebook_url],['TikTok',site.tiktok_url],['YouTube',site.youtube_url],['LinkedIn',site.linkedin_url]];return names.filter(([,url])=>safeURL(url)).map(([name,url])=>`<a href="${escapeHTML(safeURL(url))}" target="_blank" rel="noopener noreferrer">${name} ↗</a>`).join('')}
-function updateCards(updates){const list=(Array.isArray(updates)?updates:[]).slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));if(!list.length)return `<div class="update-item"><time>PROGRAM JOURNAL / COMING SOON</time><h3>THE NEXT CHAPTER STARTS <span class="punctuation-unit">HERE<span class="red">.</span></span></h3><p>Confirmed team milestones, original build photos and official updates will appear as the program develops.</p></div>`;return list.map(u=>`<article class="update-item">${srcURL(u.image)?`<img src="${escapeHTML(srcURL(u.image))}" alt="${escapeHTML(u.title)}" loading="lazy">`:''}<time>${escapeHTML(u.date)}</time><h3>${escapeHTML(u.title)}</h3><p>${escapeHTML(u.summary)}</p></article>`).join('')}
+function formattedUpdateDate(raw){
+  const value=String(raw||'').trim();
+  const match=value.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
+  if(match){
+    const year=match[1],month=Number(match[2]);
+    if(month>=1&&month<=12){
+      const monthLabel=new Intl.DateTimeFormat('en-US',{month:'short',timeZone:'UTC'}).format(new Date(Date.UTC(Number(year),month-1,1))).toUpperCase();
+      return {month:monthLabel,firstTwo:year.slice(0,2),lastTwo:year.slice(2),iso:value.slice(0,10),label:`${monthLabel} ${year}`};
+    }
+  }
+  const parsed=new Date(value);
+  if(!Number.isNaN(parsed.getTime())){
+    const year=String(parsed.getUTCFullYear());
+    const monthLabel=new Intl.DateTimeFormat('en-US',{month:'short',timeZone:'UTC'}).format(parsed).toUpperCase();
+    return {month:monthLabel,firstTwo:year.slice(0,-2),lastTwo:year.slice(-2),iso:parsed.toISOString().slice(0,10),label:`${monthLabel} ${year}`};
+  }
+  return {month:'UPDATE',firstTwo:'',lastTwo:'',iso:'',label:value||'Update'};
+}
+function updateCards(updates){
+  const list=(Array.isArray(updates)?updates:[]).slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  if(!list.length)return `<div class="update-item update-item-empty"><div class="update-copy"><h3>THE NEXT CHAPTER STARTS <span class="punctuation-unit">HERE<span class="red">.</span></span></h3><p>Confirmed team milestones, original build photos and official updates will appear as the program develops.</p></div></div>`;
+  return list.map(u=>{
+    const d=formattedUpdateDate(u.date);
+    const title=String(u.title||'TEAM UPDATE').trim();
+    const cleanTitle=title.replace(/[.\s]+$/,'');
+    const image=srcURL(u.image);
+    return `<article class="update-item"><div class="update-date"><time ${d.iso?`datetime="${escapeHTML(d.iso)}"`:''} aria-label="${escapeHTML(d.label)}"><span class="update-month">${escapeHTML(d.month)}</span><span class="update-year">${escapeHTML(d.firstTwo)}<span class="update-year-accent">${escapeHTML(d.lastTwo)}</span></span></time></div><div class="update-copy"><h3>${escapeHTML(cleanTitle)}<span class="update-title-period" aria-hidden="true">.</span></h3><p>${escapeHTML(u.summary||'')}</p>${image?`<img class="update-photo" src="${escapeHTML(image)}" alt="${escapeHTML(title)}" loading="lazy">`:''}</div></article>`;
+  }).join('');
+}
+
 function home(site,sponsors,updates){return `
 <section class="hero"><div class="shell"><div class="hero-top"><span class="eyebrow">EST. A NEW ERA / McPHERSON, KANSAS</span><div class="hero-top-right"><span class="mono">A STUDENT-LED FORMULA SAE PROGRAM</span><div class="index-circle">01</div></div></div><div class="hero-grid"><div class="hero-copy"><div class="hero-lede mono">Purpose built / Future focused</div><h1 class="hero-title"><span class="line">ENGINEERED</span><span class="line last"><span class="rich">for</span> THE</span><span class="line">FUTURE<span class="period">.</span></span></h1><div class="hero-bottom"><p class="body-copy">${escapeHTML(site.hero_description||'A new student Formula SAE team preparing for our first official competition season in 2028.')}</p>${localLink('/about.html','DISCOVER OUR VISION ↗','button')}</div></div><div class="hero-art"><div class="empty-bay"><span class="bay-id mono">IMAGE RESERVE / 01</span><span class="bay-corner">↗</span><div class="bay-center"><strong>NOT YET<br><span class="punctuation-unit">UNVEILED<span class="red">.</span></span></strong><span class="mono">THE RED RIOT RACING CAR / IN DEVELOPMENT</span></div></div></div></div><div class="hero-rail"><div><em>01</em><span class="mono">THE PROGRAM</span></div><div><em>02</em><span class="mono">THE DEVELOPMENT</span></div><div><em>03</em><span class="mono">THE ROAD TO ${escapeHTML(site.competition_year||'2028')}</span></div></div></div></section>
 <section class="light section-space"><div class="shell">${topLine('01','WHY WE EXIST / THE PROGRAM')}<div class="intro-layout"><h2 class="display statement intro-statement"><span class="line">NOT JUST</span><span class="line offset"><em class="rich">another</em></span><span class="line">RACE <span class="punctuation-unit">TEAM<span class="red">.</span></span></span></h2><div class="body-column"><div class="eyebrow">A new beginning / McPherson College</div><p>${escapeHTML(site.about_description||'Red Riot Racing is a student Formula SAE team based at McPherson College. We are preparing for competition in 2028.')}</p>${localLink('/about.html','THE STORY SO FAR') }<div style="height:12px"></div>${external('https://www.sae.org/events/student/about/formula','LEARN MORE ABOUT FORMULA SAE')}</div></div><div class="number-band"><div class="item"><strong>2028<span class="red">.</span></strong><small>Target competition year</small></div><div class="item"><strong>FSAE</strong><small>Student engineering competition</small></div><div class="item"><strong>KS</strong><small>McPherson College / Kansas</small></div></div></div></section>

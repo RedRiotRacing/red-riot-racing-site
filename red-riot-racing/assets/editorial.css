@@ -321,3 +321,30 @@ body{background:var(--black);color:var(--white)}
 .cms-custom-period{color:#e32636;display:inline-block;margin-inline-start:.075em;white-space:nowrap}
 .cms-announcement{background:#e32636;color:#fff;text-align:center;padding:10px 20px;font:500 12px/1.5 'Chakra Petch',sans-serif;letter-spacing:.1em;text-transform:uppercase}
 [hidden]{display:none!important}
+
+
+/* V4.7 — Approved editorial announcement layout. Scoped to Updates journal only. */
+.updates-grid{display:flex!important;flex-direction:column;gap:0!important;margin-top:clamp(20px,3vw,44px)}
+.updates-grid .update-item{display:grid!important;grid-template-columns:clamp(150px,22%,245px) minmax(0,1fr);align-items:stretch;gap:0;min-height:0!important;padding:clamp(28px,4.5vw,58px) 0!important;border:0!important;border-top:1px solid #454950!important;border-radius:0!important;background:transparent!important;color:#f0f1f2!important}
+.updates-grid .update-item:last-child{border-bottom:1px solid #454950!important}
+.updates-grid .update-date{padding:4px clamp(18px,3vw,42px) 4px 0;min-width:0;display:flex;align-items:center;justify-content:flex-start}
+.updates-grid .update-date time{display:flex;flex-direction:column;align-items:flex-start;gap:clamp(3px,.5vw,8px);color:#f0f1f2;letter-spacing:normal;font:inherit}
+.updates-grid .update-month{font:500 clamp(15px,1.55vw,23px)/1.1 'Chakra Petch',sans-serif;letter-spacing:.10em;color:#d4d9de;text-transform:uppercase}
+.updates-grid .update-year{font:500 clamp(62px,7vw,105px)/.88 'Oxanium','Chakra Petch',sans-serif;letter-spacing:-.09em;color:#f0f1f2;white-space:nowrap;font-variant-numeric:tabular-nums}
+.updates-grid .update-year-accent{color:#e32636}
+.updates-grid .update-copy{min-width:0;border-left:2px solid #f0f1f2;padding:8px 0 8px clamp(24px,4.2vw,65px);display:flex;flex-direction:column;justify-content:center}
+.updates-grid .update-copy h3{font:400 clamp(35px,5.4vw,77px)/1.05 'Barlow Condensed','Oxanium',sans-serif;letter-spacing:-.025em;text-transform:none;color:#f0f1f2;overflow-wrap:break-word;margin:0 0 clamp(12px,1.6vw,20px)}
+.updates-grid .update-title-period{color:#e32636;margin-left:.07em;white-space:nowrap}
+.updates-grid .update-copy p{font:400 clamp(14px,1.5vw,19px)/1.65 'Chakra Petch',sans-serif;color:#b4bac3!important;max-width:750px;margin:0}
+.updates-grid .update-photo{display:block;width:min(100%,720px);height:auto;max-height:500px;object-fit:contain;object-position:left center;margin-top:clamp(20px,2.5vw,32px)}
+.updates-grid .update-item-empty{grid-template-columns:1fr}
+.updates-grid .update-item-empty .update-copy{border-left:0;padding-left:0}
+@media(max-width:720px){
+ .updates-grid .update-item{grid-template-columns:1fr;padding:30px 0!important}
+ .updates-grid .update-date{padding:0 0 18px;align-items:flex-start}
+ .updates-grid .update-date time{flex-direction:row;align-items:baseline;gap:13px}
+ .updates-grid .update-month{font-size:17px}
+ .updates-grid .update-year{font-size:clamp(49px,12.5vw,78px)}
+ .updates-grid .update-copy{padding:20px 0 4px 23px;border-left:2px solid #f0f1f2}
+ .updates-grid .update-copy h3{font-size:clamp(37px,9vw,65px)}
+}
