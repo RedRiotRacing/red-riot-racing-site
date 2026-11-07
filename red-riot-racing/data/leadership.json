@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "Michael McCarthy",
+    "role": "Director of Engineering ",
+    "bio": "Michael is a Automotive Restoration student and founding member of RRR",
+    "image": "/media/img5106.jpeg",
+    "order": 1
+  },
+  {
+    "name": "Luke Wood",
+    "role": "Director of Business",
+    "bio": "Luke is an Automotive Restoration student and founding member of Red Riot Racing by McP",
+    "image": "/media/img5106-2.jpeg",
+    "order": 2
+  }
+]
