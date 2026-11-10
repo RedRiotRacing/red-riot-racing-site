@@ -130,7 +130,7 @@ const RR_V53_MERCH_GROUPS=[
 ];
 function merchPage(site,items){
  const products=Array.isArray(items)?items.filter(x=>x&&x.visible!==false):RR_V52_DEFAULT_MERCH;
- const tile=(item,i)=>`<article class="rr-v52-merch-item"><div class="rr-v52-merch-visual">${srcURL(item.image)?`<img src="${escapeHTML(srcURL(item.image))}" alt="${escapeHTML(item.name||'Merch concept')}" loading="lazy">`:`<img class="rr-v52-merch-placeholder" src="/assets/official-red-riot-logo-transparent.png" alt="Red Riot Racing logo" loading="lazy">`}<span class="rr-v52-merch-number">${String(i+1).padStart(2,'0')}</span></div><div class="rr-v52-merch-details"><h3>${escapeHTML(item.name||'MERCH CONCEPT')}</h3><span>PROPOSED ITEM</span></div><span class="rr-v52-merch-status">${escapeHTML(item.status||'In Development')}</span></article>`;
+ const tile=(item,i)=>`<article class="rr-v52-merch-item"><div class="rr-v52-merch-visual">${srcURL(item.image)?`<img src="${escapeHTML(srcURL(item.image))}" alt="${escapeHTML(item.name||'Merch concept')}" loading="lazy">`:`<div class="rr-v54-merch-placeholder"><span class="rr-v54-merch-mark">RR / CONCEPT</span><strong>${escapeHTML(item.name||'PROPOSED ITEM')}</strong><span class="rr-v54-merch-caption">DESIGN NOT FINALIZED</span></div>`}<span class="rr-v52-merch-number">${String(i+1).padStart(2,'0')}</span></div><div class="rr-v52-merch-details"><h3>${escapeHTML(item.name||'MERCH CONCEPT')}</h3><span>PROPOSED ITEM</span></div><span class="rr-v52-merch-status">${escapeHTML(item.status||'In Development')}</span></article>`;
  const nameKey=s=>String(s||'').trim().toLowerCase().replace(/[^a-z0-9]+/g,'');
  const used=new Set();let count=0;
  const groups=RR_V53_MERCH_GROUPS.map(group=>{

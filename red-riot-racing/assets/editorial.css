@@ -456,3 +456,21 @@ body{background:var(--black);color:var(--white)}
 .rr-v53-merch-group .rr-v52-merch-grid{margin-top:24px!important}
 .rr-v53-merch-group .rr-v52-merch-details>span{letter-spacing:.07em}
 @media(max-width:650px){.rr-v53-merch-group-heading{align-items:start;flex-direction:column;gap:8px}.rr-v53-merch-group .rr-v52-merch-grid{margin-top:16px!important}}
+
+/* V5.4 FIX — readable, editorial merchandise concepts; never impersonate finished products. */
+.rr-v53-merch-group .rr-v52-merch-grid {grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:clamp(14px,2vw,28px)!important;}
+.rr-v53-merch-group .rr-v52-merch-item {background:#1a1e24;border:1px solid #3a4049;gap:0;overflow:hidden;}
+.rr-v53-merch-group .rr-v52-merch-visual {aspect-ratio:4/3;min-height:175px;background:radial-gradient(circle at 82% 7%,#303740,#1d222a 65%);border:none;border-bottom:1px solid #3a4049;padding:0;}
+.rr-v53-merch-group .rr-v52-merch-visual:has(img) {padding:16px;}
+.rr-v54-merch-placeholder {width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:25px;gap:15px;position:relative;isolation:isolate;color:#f5f5f5;}
+.rr-v54-merch-placeholder:before {content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,transparent 98%,rgba(255,255,255,.04) 98%),linear-gradient(transparent 98%,rgba(255,255,255,.04) 98%);background-size:44px 44px;}
+.rr-v54-merch-mark,.rr-v54-merch-caption {font:500 10px/1.4 'IBM Plex Mono',monospace;letter-spacing:.11em;color:#9aa3ad;}
+.rr-v54-merch-placeholder strong {font:700 clamp(28px,3.3vw,52px)/.9 'Barlow Condensed',sans-serif;color:#f3f4f4;text-transform:uppercase;letter-spacing:-.02em;max-width:95%;}
+.rr-v53-merch-group .rr-v52-merch-details {padding:18px 20px 8px;}
+.rr-v53-merch-group .rr-v52-merch-details h3 {color:#f2f3f4!important;font:600 clamp(25px,2.5vw,35px)/1 'Barlow Condensed',sans-serif!important;margin:0 0 10px;}
+.rr-v53-merch-group .rr-v52-merch-details>span {color:#afb5be!important;letter-spacing:.1em;}
+.rr-v53-merch-group .rr-v52-merch-status {padding:8px 20px 20px;color:#f04354!important;margin:0;}
+.rr-v53-merch-group .rr-v52-merch-number {color:#ccd0d5!important;z-index:2;top:15px;right:16px;left:auto;}
+.rr-v53-merch-group .rr-v53-merch-group-heading h3 {color:inherit!important;}
+@media(max-width:980px){.rr-v53-merch-group .rr-v52-merch-grid {grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+@media(max-width:600px){.rr-v53-merch-group .rr-v52-merch-grid {grid-template-columns:1fr!important;}.rr-v53-merch-group .rr-v52-merch-visual{aspect-ratio:5/3;min-height:170px}.rr-v54-merch-placeholder strong{font-size:44px;}}
