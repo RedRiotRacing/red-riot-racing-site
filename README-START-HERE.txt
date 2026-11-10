@@ -1,11 +1,16 @@
-RED RIOT RACING / V5 COMPLETE WEBSITE PREVIEW
+RED RIOT RACING V5.1 / COMPLETE WEBSITE PREVIEW
 
-This ZIP includes the ENTIRE website folder and CMS config, including unchanged files. No hunting for individual assets.
+This contains the WHOLE V5.1 site including untouched files, the official logo artwork on dark and white backgrounds, and the complete CMS setup.
 
-IMPORTANT: this package was rebuilt from the V4.7 archived package available in this conversation. It is NOT a byte-for-byte snapshot of your latest GitHub main branch. The data/ and media/ bundled here do NOT include your newer live Pages CMS edits, portraits and sponsor uploads. DO NOT drag the full ZIP over your existing live repository as that would overwrite newer content.
+LATEST CHANGES: Sponsorship page repeats replaced (hero remains BE PART OF THE RIOT, middle BACK THE BUILD, closing HELP US REACH THE GRID). Leadership roster now uses matching director and lead positions, with directors larger; Engineering and Business visually separated; finance subleads below the Head of Finance. Roles without a named person are marked TO BE ANNOUNCED. All existing leadership entries remain in Pages CMS; unmatched names appear under Additional Team Members rather than disappearing. Logo reproductions are sourced directly from the supplied Final LOGO.pdf, not regenerated.
 
-EASY SAFE REPLACEMENT: Use the included INSTALL-V5-PREVIEW.command. It asks you to select your GitHub repository folder, then copies in the whole V5 site, while automatically retaining your existing data/*.json and media files and the working .pages.yml. The installer also makes a timestamped backup first. After installation use GitHub Desktop and commit only on redesign-preview.
+SAFE SIMPLE INSTALL:
+1. Extract the ZIP on your Mac.
+2. In GitHub Desktop select REDESIGN-PREVIEW, pull its latest changes, and ensure there are no uncommitted changes.
+3. Double-click INSTALL-V5-PREVIEW.command. If macOS blocks it, right-click > Open.
+4. Choose the GitHub REPOSITORY ROOT when asked (red-riot-racing-site, NOT the nested website folder).
+5. The installer backs up your existing repository to your Desktop, replaces the complete website, and preserves your current data/*.json, media/, and .pages.yml.
+6. Review changes in GitHub Desktop; commit and Push origin for REDESIGN-PREVIEW.
+7. Do not merge into main until preview checked.
 
-The image in assets/official-red-riot-logo.png is exported directly from the final official logo PDF, unchanged in its design. The original PDF is also bundled.
-
-This is a preview. Not an authorized deployment to the production branch main.
+The bundled JSON files are baseline placeholders; the installer deliberately preserves the latest local CMS content. If your local repository is behind the GitHub CMS changes, pull those changes FIRST. This site is based on the last V5 bundle, not a verified snapshot of your GitHub production branch.

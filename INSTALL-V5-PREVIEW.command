@@ -21,7 +21,7 @@ if [[ -n "$(git status --porcelain)" ]]; then
   osascript -e 'display alert "Uncommitted changes" message "Commit or stash changes in GitHub Desktop first. No files were replaced."'
   exit 1
 fi
-BACKUP="$HOME/Desktop/Red-Riot-Racing-Pre-V5-$(date +%Y%m%d-%H%M%S).zip"
+BACKUP="$HOME/Desktop/Red-Riot-Racing-Pre-V51-$(date +%Y%m%d-%H%M%S).zip"
 /usr/bin/ditto -c -k --sequesterRsrc "$REPO" "$BACKUP"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -31,4 +31,4 @@ if [[ -d "$REPO/red-riot-racing/media" ]]; then cp -R "$REPO/red-riot-racing/med
 /usr/bin/ditto "$SOURCE" "$REPO/red-riot-racing"
 rm -rf "$REPO/red-riot-racing/data"; /usr/bin/ditto "$TMP/preserved/data" "$REPO/red-riot-racing/data"
 if [[ -d "$TMP/preserved/media" ]]; then rm -rf "$REPO/red-riot-racing/media"; /usr/bin/ditto "$TMP/preserved/media" "$REPO/red-riot-racing/media"; fi
-osascript -e 'display dialog "V5 preview installed on redesign-preview. Your current Pages CMS data, sponsor logos, portraits, media and .pages.yml were preserved. Backup saved to your Desktop. Review the GitHub Desktop changes before committing." buttons {"OK"} default button "OK"'
+osascript -e 'display dialog "V5.1 preview installed on redesign-preview. Your current Pages CMS data, sponsor logos, portraits, media and .pages.yml were preserved. Backup saved to your Desktop. Review the GitHub Desktop changes before committing." buttons {"OK"} default button "OK"'
