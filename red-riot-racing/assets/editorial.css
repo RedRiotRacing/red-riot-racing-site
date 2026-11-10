@@ -447,3 +447,12 @@ body{background:var(--black);color:var(--white)}
 .rr-v51-divisions{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 .rr-v51-person-lead .rr-v51-photo{width:100%;aspect-ratio:4/4.6!important}
 @media(max-width:1000px){.rr-v51-divisions{grid-template-columns:1fr!important}}
+
+/* V5.3 — merch proposals grouped by actual product, rather than generic labels */
+.rr-v53-merch-group{margin-top:clamp(32px,5vw,72px)}
+.rr-v53-merch-group-heading{display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid #bdbdb9;padding-bottom:14px}
+.rr-v53-merch-group-heading h3{font:800 clamp(30px,4vw,58px)/.95 'Barlow Condensed',sans-serif;letter-spacing:-.025em;color:#191919;margin:0}
+.rr-v53-merch-group-heading .eyebrow{font-size:10px;color:#656565}
+.rr-v53-merch-group .rr-v52-merch-grid{margin-top:24px!important}
+.rr-v53-merch-group .rr-v52-merch-details>span{letter-spacing:.07em}
+@media(max-width:650px){.rr-v53-merch-group-heading{align-items:start;flex-direction:column;gap:8px}.rr-v53-merch-group .rr-v52-merch-grid{margin-top:16px!important}}

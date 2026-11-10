@@ -1,0 +1,6 @@
+V5.3 MERCHANDISE GRID
+- Displays all 10 proposed products by specific name.
+- Places related items together under Jackets & Layers, Shirts & Polos, Headwear, Accessories.
+- Removes generic category labels inside cards.
+- Unconfirmed products remain marked In Development.
+- Installer preserves existing CMS data and media; grouping works independently of JSON order.

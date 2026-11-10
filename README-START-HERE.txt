@@ -1,4 +1,4 @@
-RED RIOT RACING — V5.2 COMPLETE WEBSITE
+RED RIOT RACING — V5.3 COMPLETE WEBSITE
 
 ONE EASY SWAP / DO NOT USE ON MAIN
 
@@ -17,3 +17,5 @@ WHAT CHANGED
 * Retains V5.1 sponsor page heading changes and existing website pages, styles, scripts, media, and expanded CMS.
 
 IMPORTANT: This ZIP is based on the last V5.1 package, not a verified snapshot of your current GitHub production files. The installer preserves current CMS data/media from your LOCAL repository; pull latest changes FIRST. The existing Pages CMS .pages.yml is preserved except for appending one new merch entry.
+
+V5.3 update: Merchandise page explicitly lists every proposed product, grouped as Jackets & Layers, Shirts & Polos, Headwear and Accessories. Generic category labels are removed from product cards.

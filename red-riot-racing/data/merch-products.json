@@ -1,21 +1,49 @@
 [
   {
     "name": "Quarter-Zip",
-    "category": "Apparel",
+    "category": "Outerwear & Layers",
     "status": "In Development",
     "image": "",
     "visible": true
   },
   {
     "name": "Windbreaker",
-    "category": "Outerwear",
+    "category": "Outerwear & Layers",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Pullover Hoodie",
+    "category": "Outerwear & Layers",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Zip-Up Hoodie",
+    "category": "Outerwear & Layers",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Crewneck Sweater",
+    "category": "Outerwear & Layers",
     "status": "In Development",
     "image": "",
     "visible": true
   },
   {
     "name": "Polo",
-    "category": "Apparel",
+    "category": "Shirts & Polos",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "T-Shirt",
+    "category": "Shirts & Polos",
     "status": "In Development",
     "image": "",
     "visible": true
@@ -28,8 +56,8 @@
     "visible": true
   },
   {
-    "name": "T-Shirt",
-    "category": "Apparel",
+    "name": "Beanie",
+    "category": "Headwear",
     "status": "In Development",
     "image": "",
     "visible": true
@@ -37,34 +65,6 @@
   {
     "name": "Keychain",
     "category": "Accessories",
-    "status": "In Development",
-    "image": "",
-    "visible": true
-  },
-  {
-    "name": "Pullover Hoodie",
-    "category": "Apparel",
-    "status": "In Development",
-    "image": "",
-    "visible": true
-  },
-  {
-    "name": "Zip-Up Hoodie",
-    "category": "Apparel",
-    "status": "In Development",
-    "image": "",
-    "visible": true
-  },
-  {
-    "name": "Crewneck Sweater",
-    "category": "Apparel",
-    "status": "In Development",
-    "image": "",
-    "visible": true
-  },
-  {
-    "name": "Beanie",
-    "category": "Headwear",
     "status": "In Development",
     "image": "",
     "visible": true
