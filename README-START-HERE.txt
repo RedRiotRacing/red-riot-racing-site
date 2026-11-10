@@ -1,16 +1,19 @@
-RED RIOT RACING V5.1 / COMPLETE WEBSITE PREVIEW
+RED RIOT RACING — V5.2 COMPLETE WEBSITE
 
-This contains the WHOLE V5.1 site including untouched files, the official logo artwork on dark and white backgrounds, and the complete CMS setup.
+ONE EASY SWAP / DO NOT USE ON MAIN
 
-LATEST CHANGES: Sponsorship page repeats replaced (hero remains BE PART OF THE RIOT, middle BACK THE BUILD, closing HELP US REACH THE GRID). Leadership roster now uses matching director and lead positions, with directors larger; Engineering and Business visually separated; finance subleads below the Head of Finance. Roles without a named person are marked TO BE ANNOUNCED. All existing leadership entries remain in Pages CMS; unmatched names appear under Additional Team Members rather than disappearing. Logo reproductions are sourced directly from the supplied Final LOGO.pdf, not regenerated.
+1. Download and extract this ZIP on your Mac.
+2. Open GitHub Desktop, choose the repository red-riot-racing-site and branch redesign-preview.
+3. Fetch/Pull origin, ensure there are no uncommitted changes.
+4. Double-click INSTALL-V5-PREVIEW.command and choose the *repository root* red-riot-racing-site when prompted.
+5. The installer backs up your full local repository on your Desktop, replaces the entire site folder, preserves the existing data/*.json and media files, and adds a new merch collection file/editor if not already present.
+6. Review in GitHub Desktop; commit and Push origin on redesign-preview. Preview Cloudflare before a main merge.
 
-SAFE SIMPLE INSTALL:
-1. Extract the ZIP on your Mac.
-2. In GitHub Desktop select REDESIGN-PREVIEW, pull its latest changes, and ensure there are no uncommitted changes.
-3. Double-click INSTALL-V5-PREVIEW.command. If macOS blocks it, right-click > Open.
-4. Choose the GitHub REPOSITORY ROOT when asked (red-riot-racing-site, NOT the nested website folder).
-5. The installer backs up your existing repository to your Desktop, replaces the complete website, and preserves your current data/*.json, media/, and .pages.yml.
-6. Review changes in GitHub Desktop; commit and Push origin for REDESIGN-PREVIEW.
-7. Do not merge into main until preview checked.
+WHAT CHANGED
+* Official logo rendered exactly from supplied Final LOGO.pdf with true transparent background (no redraw).
+* New prominent social links in navigation, homepage social panel, and footer. Uses Pages CMS site.json URLs.
+* Leadership: both Directors have the largest portraits, Head of Finance medium, ALL Leads the SAME portrait dimensions; existing profiles remain editable via leadership.json.
+* Merch: 10 proposed items, clearly NOT confirmed products. New Pages CMS editor: Proposed merchandise items.
+* Retains V5.1 sponsor page heading changes and existing website pages, styles, scripts, media, and expanded CMS.
 
-The bundled JSON files are baseline placeholders; the installer deliberately preserves the latest local CMS content. If your local repository is behind the GitHub CMS changes, pull those changes FIRST. This site is based on the last V5 bundle, not a verified snapshot of your GitHub production branch.
+IMPORTANT: This ZIP is based on the last V5.1 package, not a verified snapshot of your current GitHub production files. The installer preserves current CMS data/media from your LOCAL repository; pull latest changes FIRST. The existing Pages CMS .pages.yml is preserved except for appending one new merch entry.

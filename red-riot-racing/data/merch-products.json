@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Quarter-Zip",
+    "category": "Apparel",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Windbreaker",
+    "category": "Outerwear",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Polo",
+    "category": "Apparel",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Baseball Cap",
+    "category": "Headwear",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "T-Shirt",
+    "category": "Apparel",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Keychain",
+    "category": "Accessories",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Pullover Hoodie",
+    "category": "Apparel",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Zip-Up Hoodie",
+    "category": "Apparel",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Crewneck Sweater",
+    "category": "Apparel",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  },
+  {
+    "name": "Beanie",
+    "category": "Headwear",
+    "status": "In Development",
+    "image": "",
+    "visible": true
+  }
+]

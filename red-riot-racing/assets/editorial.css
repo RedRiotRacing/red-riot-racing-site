@@ -391,3 +391,59 @@ body{background:var(--black);color:var(--white)}
 .rr-v51-extra .rr-v51-leads{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:1000px){.rr-v51-divisions{grid-template-columns:1fr}.rr-v51-leads{grid-template-columns:repeat(3,minmax(0,1fr))}.rr-v51-extra .rr-v51-leads{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:650px){.rr-v51-directors{grid-template-columns:1fr;max-width:430px;margin-bottom:60px}.rr-v51-leads{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}.rr-v51-extra .rr-v51-leads{grid-template-columns:repeat(2,minmax(0,1fr))}.rr-v51-info h3{font-size:22px}.rr-v51-revised-heading strong{font-size:clamp(42px,12vw,75px)!important}.rr-v51-closing-headline .riot-prefix{font-size:clamp(40px,9vw,70px)!important}.rr-v51-closing-headline .riot-focus{font-size:clamp(52px,12vw,90px)!important}.rr-v51-person-director .rr-v51-photo{aspect-ratio:4/3.6}}
+
+/* V5.2 — additional social prominence, equal lead portrait scale, transparent official logo, merch ideas */
+.rr-v51-light-logo{border:0!important;background:transparent!important;padding:0!important;max-width:min(100%,320px)}
+.rr-v52-nav-social{display:flex;align-items:center;gap:7px;margin-inline:8px}
+.rr-v52-nav-social .rr-v52-social-link{padding:7px 9px;color:#f1f1f1;border:1px solid #3a3d45;background:#20232a;text-decoration:none;display:inline-flex;gap:7px;align-items:center;font-size:10px;letter-spacing:.03em;white-space:nowrap}
+.rr-v52-nav-social .rr-v52-social-link:hover{background:#cf2631;border-color:#cf2631;color:white}
+.rr-v52-nav-social .rr-v52-social-symbol{font-size:17px;font-weight:800;line-height:1}
+.rr-v52-nav-social .rr-v52-social-name{display:none}
+.rr-v52-social-section{background:#13151a;color:white;border-top:1px solid #353940;border-bottom:1px solid #353940}
+.rr-v52-social-main{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(25px,6vw,100px);margin-top:45px;align-items:stretch}
+.rr-v52-social-heading{font:800 clamp(65px,10vw,170px)/.88 'Barlow Condensed',sans-serif;letter-spacing:-.045em;text-transform:uppercase;color:#f8f8f8;margin:28px 0}
+.rr-v52-social-heading span{color:#e32636;font-style:italic}
+.rr-v52-social-copy>p{max-width:530px;color:#b7bbc4;font-size:clamp(16px,1.5vw,21px);line-height:1.6;margin:22px 0 31px}
+.rr-v52-social-buttons{display:flex;gap:12px;flex-wrap:wrap}
+.rr-v52-social-buttons .rr-v52-social-link{display:inline-flex;align-items:center;gap:12px;background:#e32636;color:white;padding:15px 20px;font-weight:800;font-family:'Barlow Condensed',sans-serif;font-size:20px;letter-spacing:.025em;text-decoration:none;text-transform:uppercase}
+.rr-v52-social-buttons .rr-v52-social-link:hover{background:#fff;color:#151515}
+.rr-v52-social-symbol{font-weight:900;font-size:24px;line-height:1}
+.rr-v52-featured{padding:clamp(25px,4vw,54px);border:1px solid #3e424c;background:linear-gradient(140deg,#22262f,#0a0c0f);display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;min-height:400px;gap:30px}
+.rr-v52-featured-top{display:flex;flex-wrap:wrap;justify-content:space-between;width:100%;gap:10px;font-size:10px;letter-spacing:.14em;color:#a8acb3}
+.rr-v52-featured>img{max-height:145px;max-width:88%;width:auto;height:auto;object-fit:contain;align-self:center}
+.rr-v52-featured>p{color:#c0c4cb;max-width:330px;font-size:16px;line-height:1.6}
+.rr-v52-featured>a{font-weight:800;font-size:14px;letter-spacing:.07em;color:#fff;text-underline-offset:6px}
+.rr-v52-footer-social{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border-top:1px solid #444a52;padding:25px 0;margin-top:38px}
+.rr-v52-footer-social>strong{font:800 clamp(28px,3vw,45px)/1 'Barlow Condensed',sans-serif;color:#f2f2f2}
+.rr-v52-footer-social>div{display:flex;gap:12px;flex-wrap:wrap}
+.rr-v52-footer-social .rr-v52-social-link{display:flex;align-items:center;gap:8px;color:#fff;border:1px solid #616670;padding:10px 15px;text-decoration:none;font-weight:700;font-size:13px}
+.rr-v52-footer-social .rr-v52-social-link:hover{background:#e32636;border-color:#e32636}
+/* directors largest, head medium, all leads exactly equal regardless of reporting line */
+.rr-v51-person-head{max-width:420px;margin-bottom:32px}
+.rr-v51-person-head .rr-v51-photo{aspect-ratio:4/4.2}
+.rr-v51-person-head .rr-v51-info h3{font-size:clamp(26px,2.3vw,36px)}
+.rr-v51-person-lead .rr-v51-photo{aspect-ratio:4/4.6!important}
+.rr-v51-person-lead .rr-v51-info h3{font-size:clamp(22px,2vw,32px)!important}
+.rr-v51-finance{margin-top:0;padding-top:0;border:0}
+.rr-v51-finance>.eyebrow{margin-bottom:23px}
+.rr-v51-business>.rr-v51-leads{display:grid;grid-template-columns:1fr 1fr}
+.rr-v51-business>.rr-v51-leads .rr-v51-person-head{grid-column:1 / -1;max-width:min(100%,380px);margin:0 auto 25px;width:100%}
+.rr-v51-finance .rr-v51-leads{grid-template-columns:repeat(2,minmax(0,1fr))}
+/* concept merchandise, no buying links until official availability */
+.rr-v52-merch-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:18px!important;margin-top:50px}
+.rr-v52-merch-item{min-width:0;display:flex;flex-direction:column;gap:10px}
+.rr-v52-merch-visual{aspect-ratio:4/4.8;background:#e5e5e2;border:1px solid #cbcbc8;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:22px}
+.rr-v52-merch-visual>img{display:block;width:100%;height:100%;object-fit:contain}
+.rr-v52-merch-visual>.rr-v52-merch-placeholder{max-width:78%;height:auto;max-height:135px;opacity:.72}
+.rr-v52-merch-number{position:absolute;top:12px;left:12px;color:#7e7e7c;font:700 12px 'Chakra Petch',sans-serif}
+.rr-v52-merch-details h3{color:#1b1b1b;font:700 clamp(18px,1.8vw,29px)/1.02 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:5px 0 6px}
+.rr-v52-merch-details>span{color:#666;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.rr-v52-merch-status{font-size:10px;letter-spacing:.05em;font-weight:700;color:#a72732;text-transform:uppercase;margin-top:auto}
+@media(max-width:1250px){.rr-v52-merch-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}.rr-v52-nav-social{margin-inline:0}}
+@media(max-width:950px){.rr-v52-social-main{grid-template-columns:1fr}.rr-v52-featured{min-height:300px}.rr-v52-merch-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rr-v52-nav-social{flex-wrap:wrap;gap:8px;margin:12px 0}.rr-v52-nav-social .rr-v52-social-name{display:inline}}
+@media(max-width:650px){.rr-v52-merch-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:13px!important}.rr-v52-merch-visual{padding:14px}.rr-v52-social-heading{font-size:clamp(58px,15vw,96px)}.rr-v52-social-buttons .rr-v52-social-link{font-size:17px;padding:12px 15px}.rr-v52-featured{padding:25px;min-height:300px}.rr-v51-business>.rr-v51-leads .rr-v51-person-head{max-width:270px}.rr-v51-business>.rr-v51-leads{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Match portrait geometry across all Engineering and Business Lead roles. */
+.rr-v51-divisions{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.rr-v51-person-lead .rr-v51-photo{width:100%;aspect-ratio:4/4.6!important}
+@media(max-width:1000px){.rr-v51-divisions{grid-template-columns:1fr!important}}
