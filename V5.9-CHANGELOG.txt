@@ -1,0 +1,8 @@
+Red Riot Racing V5.9 — Leadership title update only
+
+- Director of Engineering displays as President.
+- Director of Business displays as Vice President.
+- Existing Pages CMS records with the old titles still match the correct positions and show the new names.
+- The President and Vice President retain the same prominent portrait sizes and placement.
+- All other roles, pages, styles, content, and CMS data remain as in V5.8.
+- Existing content is preserved by the safe-swap installer.
