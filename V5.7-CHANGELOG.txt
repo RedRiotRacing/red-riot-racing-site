@@ -1,0 +1,5 @@
+V5.7 Sponsor CTA contrast fix
+
+On the Sponsors page, the closing section heading HELP US REACH THE GRID. is now fully legible: THE GRID and its final period are white against the red section background. The original typeface, geometry, spacing, content, and all other pages are unchanged.
+
+Use INSTALL-V5-PREVIEW.command on redesign-preview. The installer protects current data and media, with a local backup.

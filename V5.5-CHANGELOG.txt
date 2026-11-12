@@ -1,0 +1,10 @@
+RED RIOT RACING — V5.5 LEADERSHIP CENTERING
+
+- Directors, Heads and Leads centered within their portrait cards.
+- Incomplete profile rows now center the final card instead of leaving it at left.
+- Engineering and Business division headings centered.
+- Role labels, names and biographies centered.
+- Photo size hierarchy remains Director > Head > Lead.
+- All Lead portraits remain consistently sized.
+- No unrelated page design or current CMS data changed.
+- Uses the same full website safe-swap installer as V5.4.
