@@ -1,9 +1,8 @@
 [
   {
     "name": "Michael McCarthy ",
-    "role": "President ",
+    "role": "Director of Engineering",
     "bio": "Our goal is bigger than just getting a car on track. We want to build a program that future students can be part of, continue to grow, and take pride in. We know that getting there takes support from people and companies who are willing to share their time, knowledge, and resources with us.",
-    "image": "/media/img9089.jpeg",
-    "order": 1
+    "image": "/media/img9089.jpeg"
   }
 ]
