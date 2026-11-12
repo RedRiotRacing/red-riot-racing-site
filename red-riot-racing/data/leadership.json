@@ -1,7 +1,12 @@
 [
   {
     "name": "Michael McCarthy",
-    "role": "President ",
-    "image": "/media/img9089-2.jpeg"
+    "role": "President",
+    "image": "/media/img9089-3.jpeg"
+  },
+  {
+    "name": "Luke Wood",
+    "role": "Vice President ",
+    "image": "/media/headshotlw.jpeg"
   }
 ]
