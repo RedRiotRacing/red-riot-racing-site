@@ -474,3 +474,65 @@ body{background:var(--black);color:var(--white)}
 .rr-v53-merch-group .rr-v53-merch-group-heading h3 {color:inherit!important;}
 @media(max-width:980px){.rr-v53-merch-group .rr-v52-merch-grid {grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
 @media(max-width:600px){.rr-v53-merch-group .rr-v52-merch-grid {grid-template-columns:1fr!important;}.rr-v53-merch-group .rr-v52-merch-visual{aspect-ratio:5/3;min-height:170px}.rr-v54-merch-placeholder strong{font-size:44px;}}
+
+
+/* V5.5 — leadership centered: complete and incomplete rows, labels and profiles.
+   Keep director > head > lead sizing, with all lead cards identical. */
+.rr-v51-roster-section .rr-v51-directors {justify-content:center;justify-items:center;align-items:start;}
+.rr-v51-roster-section .rr-v51-directors > .rr-v51-person {width:100%;max-width:540px;}
+.rr-v51-roster-section .rr-v51-division-title {text-align:center;}
+.rr-v51-roster-section .rr-v51-leads,
+.rr-v51-roster-section .rr-v51-business > .rr-v51-leads,
+.rr-v51-roster-section .rr-v51-finance .rr-v51-leads,
+.rr-v51-roster-section .rr-v51-extra .rr-v51-leads {
+  display:flex!important;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:flex-start;
+  gap:clamp(20px,2.3vw,32px) clamp(14px,2vw,24px);
+}
+/* Two even, equal-size slots per division; an odd final profile stays centered. */
+.rr-v51-roster-section .rr-v51-leads > .rr-v51-person {
+  flex:0 1 calc((100% - clamp(14px,2vw,24px))/2);
+  width:calc((100% - clamp(14px,2vw,24px))/2);
+  max-width:none;
+  min-width:0;
+  margin:0;
+}
+.rr-v51-roster-section .rr-v51-business > .rr-v51-leads > .rr-v51-person-head {
+  flex:0 1 min(100%,380px);
+  width:min(100%,380px);
+  max-width:380px;
+  margin:0 auto clamp(22px,3vw,36px);
+}
+.rr-v51-roster-section .rr-v51-person {text-align:center;}
+.rr-v51-roster-section .rr-v51-info {text-align:center;}
+.rr-v51-roster-section .rr-v51-info .eyebrow,
+.rr-v51-roster-section .rr-v51-info h3,
+.rr-v51-roster-section .rr-v51-info p {text-align:center;}
+.rr-v51-roster-section .rr-v51-finance > .eyebrow,
+.rr-v51-roster-section .rr-v51-extra > .eyebrow {display:block;text-align:center;}
+.rr-v51-roster-section .rr-v51-photo {margin-inline:auto;}
+@media(max-width:650px){
+  .rr-v51-roster-section .rr-v51-directors {grid-template-columns:1fr;}
+  .rr-v51-roster-section .rr-v51-directors > .rr-v51-person {max-width:430px;}
+  .rr-v51-roster-section .rr-v51-leads > .rr-v51-person {flex-basis:calc((100% - 14px)/2);width:calc((100% - 14px)/2);}
+  .rr-v51-roster-section .rr-v51-business > .rr-v51-leads > .rr-v51-person-head {flex-basis:min(100%,300px);width:min(100%,300px);}
+}
+@media(max-width:420px){
+  .rr-v51-roster-section .rr-v51-leads > .rr-v51-person {flex-basis:min(100%,290px);width:min(100%,290px);}
+}
+
+/* V5.6 — full-scale homepage mission statement. Live editable from site.json. */
+.rr-v56-mission{position:relative;background:#0b0e12;color:#f4f5f7;overflow:hidden;border-left:8px solid #e32636;padding:clamp(85px,11vw,178px) 0 clamp(88px,10vw,160px);isolation:isolate}
+.rr-v56-mission:before{content:"";position:absolute;inset:0 0 0 52%;z-index:-1;opacity:.19;pointer-events:none;background:repeating-linear-gradient(116deg,transparent 0 57px,#56606b 58px,transparent 59px)}
+.rr-v56-mission .rr-v56-mission-shell{position:relative}
+.rr-v56-mission-eyebrow{display:flex;align-items:center;gap:26px;margin-bottom:clamp(48px,6vw,102px)}
+.rr-v56-mission-eyebrow h2{margin:0;color:#e32636;letter-spacing:.18em;text-transform:uppercase;font:600 clamp(13px,1.2vw,18px)/1.4 'Chakra Petch',monospace;white-space:nowrap}
+.rr-v56-mission-rule{flex:1;height:1px;background:#9298a0;opacity:.75}
+.rr-v56-mission-mark{color:#e32636;font:900 25px/1 'Oxanium',sans-serif;letter-spacing:.04em}
+.rr-v56-mission-text{font-family:'Barlow Condensed','Oxanium',sans-serif;font-weight:700;font-size:clamp(40px,5.85vw,108px);line-height:1.065;letter-spacing:-.012em;max-width:1500px;margin:0;overflow-wrap:break-word}
+.rr-v56-mission-accent{color:#e32636}
+.rr-v56-mission-footer{height:2px;background:#6a7077;margin-top:clamp(50px,6vw,112px);position:relative}
+.rr-v56-mission-footer span{display:block;width:23%;height:4px;background:#e32636;position:absolute;top:-1px;left:0;transform:skewX(-28deg)}
+@media(max-width:640px){.rr-v56-mission{border-left-width:4px;padding:75px 0 90px}.rr-v56-mission-eyebrow{gap:12px;margin-bottom:48px}.rr-v56-mission-eyebrow h2{font-size:11px;letter-spacing:.1em}.rr-v56-mission-mark{font-size:18px}.rr-v56-mission-text{font-size:clamp(34px,9.3vw,60px);line-height:1.1}}

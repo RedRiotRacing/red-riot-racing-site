@@ -1,0 +1,11 @@
+RED RIOT RACING V5.6 — MISSION STATEMENT
+
+- Adds the approved one-sentence mission statement as a prominent, typographic, dark homepage section.
+- The headline is simply MISSION STATEMENT; the statement text itself appears large and is reproduced verbatim.
+- Motorsport receives red emphasis only; no extra copy is inserted into the statement.
+- The About page displays the same mission statement without the prior pending placeholder.
+- Pages CMS retains one source field: Website content & links > Official mission statement. The website uses the approved statement as the fallback if existing live CMS data has not yet filled it.
+- Existing V5.5 content, logos, sponsors, merchandise, leadership structure and social links are preserved.
+- The installer preserves existing site.json, media, sponsors, announcements and other CMS data.
+
+IMPORTANT: The complete package includes baseline CMS data for completeness, but INSTALL-V5-PREVIEW.command overlays the user's current CMS data, which is deliberate. If a previously saved, different mission statement exists, set it to the approved text in Pages CMS to get the identical official statement.
