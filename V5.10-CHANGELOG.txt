@@ -1,0 +1,7 @@
+Red Riot Racing V5.10 — Leadership label correction
+
+- Restores the middle-size Business leadership title to Head of Business (not Head of Finance).
+- Existing Pages CMS profile whose role is Head of Finance still maps to this slot, but displays Head of Business.
+- President and Vice President retained.
+- No other website code, layout, CMS configuration, or site content changed from V5.9.
+- Installer protects current repository data and media; install on redesign-preview only.
