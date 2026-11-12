@@ -3,7 +3,6 @@ media:
   output: /media
   rename: safe
 content:
-
 - name: settings
   label: Website content & links
   type: file
@@ -649,3 +648,26 @@ content:
   - name: bronze
     label: Bronze Sponsors
     type: string
+- name: merch_products
+  label: Proposed merchandise items
+  type: file
+  path: red-riot-racing/data/merch-products.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Item name
+    type: string
+    required: true
+  - name: category
+    label: Category
+    type: string
+  - name: status
+    label: Status / coming soon label
+    type: string
+  - name: image
+    label: Concept image (optional)
+    type: image
+  - name: visible
+    label: Display this concept
+    type: boolean

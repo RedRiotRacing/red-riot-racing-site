@@ -1,0 +1,1 @@
+V5.4 merchandise display correction: removes repeated official logo placeholders, fixes low-contrast product names, restores readable 3/2/1 responsive columns, keeps 10 specific merchandise concepts grouped and editable in Pages CMS. Entire website included. Installer preserves existing data and media.
