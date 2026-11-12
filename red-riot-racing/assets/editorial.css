@@ -536,3 +536,39 @@ body{background:var(--black);color:var(--white)}
 .rr-v56-mission-footer{height:2px;background:#6a7077;margin-top:clamp(50px,6vw,112px);position:relative}
 .rr-v56-mission-footer span{display:block;width:23%;height:4px;background:#e32636;position:absolute;top:-1px;left:0;transform:skewX(-28deg)}
 @media(max-width:640px){.rr-v56-mission{border-left-width:4px;padding:75px 0 90px}.rr-v56-mission-eyebrow{gap:12px;margin-bottom:48px}.rr-v56-mission-eyebrow h2{font-size:11px;letter-spacing:.1em}.rr-v56-mission-mark{font-size:18px}.rr-v56-mission-text{font-size:clamp(34px,9.3vw,60px);line-height:1.1}}
+
+/* V5.7: Sponsor CTA contrast fix -- white display type on crimson background. */
+.closing .rr-v51-closing-headline .riot-focus,
+.closing .rr-v51-closing-headline .riot-focus .punctuation-unit,
+.closing .rr-v51-closing-headline .riot-focus .riot-dot {
+  color: #ffffff !important;
+}
+.closing .rr-v51-closing-headline .riot-focus::after {
+  background: #ffffff !important;
+}
+
+/* V5.8: Merch closing heading inherits the strong motorsport display type, not the thin generic span style. */
+.closing .rr-v58-merch-loop strong {
+  font-family:'Oxanium','Chakra Petch',sans-serif!important;
+  font-weight:800!important;
+  font-style:italic!important;
+  font-size:clamp(54px,9vw,154px)!important;
+  line-height:1.02!important;
+  letter-spacing:-.075em!important;
+  color:#fff!important;
+}
+.closing .rr-v58-merch-loop strong .punctuation-unit,
+.closing .rr-v58-merch-loop strong .riot-dot {
+  font:inherit!important;
+  font-size:inherit!important;
+  font-weight:inherit!important;
+  font-style:inherit!important;
+  letter-spacing:inherit!important;
+  line-height:inherit!important;
+  color:#fff!important;
+  display:inline!important;
+  white-space:nowrap!important;
+}
+@media(max-width:650px){
+  .closing .rr-v58-merch-loop strong{font-size:clamp(39px,10vw,77px)!important}
+}

@@ -1,0 +1,3 @@
+V5.8 - Merchandise closing heading typography
+
+Fixed THE LOOP. in the red merchandise closing section to use the same bold italic motorsport display face as other emphasized site headings. Kept STAY IN in the thin face, preserving placement, contrast, and copy. No other visual sections changed. All existing site files remain in this complete safe-swap package.
