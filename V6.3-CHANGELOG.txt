@@ -1,0 +1,1 @@
+V6.3: Made McPherson College institutional feature prominent on About page only; enlarged exact official logo, added bold heading, expanded section spacing, updated cache-busting asset version. No other content or page layout changes.

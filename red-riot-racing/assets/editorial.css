@@ -625,3 +625,14 @@ body{background:var(--black);color:var(--white)}
 .rr-v62-college-footer img{display:block;width:100%;height:auto;object-fit:contain}
 .rr-v62-college-footer-label{display:block;margin-top:8px;color:#a9adb3;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:720px){.rr-v62-college-about{display:block}.rr-v62-college-about-logo{margin-top:20px}.rr-v62-college-sponsor{align-items:flex-start}}
+
+/* V6.3 — About page only: emphasize McPherson College's official identity. */
+.rr-v63-college-feature{margin-top:clamp(64px,8vw,120px);padding:clamp(44px,6vw,96px) 0;border-top:2px solid rgba(164,23,32,.45);border-bottom:1px solid rgba(40,43,49,.18);gap:clamp(42px,5vw,88px);align-items:center}
+.rr-v63-college-feature .rr-v62-college-copy{flex:1 1 450px;max-width:760px}
+.rr-v63-college-feature .rr-v62-college-kicker{font-size:clamp(11px,1vw,14px);letter-spacing:.17em;margin-bottom:clamp(22px,2.4vw,38px);color:#a71e22}
+.rr-v63-college-heading{margin:0 0 clamp(24px,3vw,46px);font-family:'Oxanium','Chakra Petch',sans-serif;font-size:clamp(34px,4.25vw,73px);line-height:1.02;letter-spacing:-.052em;font-weight:750;text-transform:uppercase;color:#181b20}
+.rr-v63-college-heading span{color:#ae1119}
+.rr-v63-college-feature .rr-v62-college-copy p{font-size:clamp(17px,1.55vw,23px);line-height:1.6;max-width:670px}
+.rr-v63-college-feature .rr-v62-college-about-logo{flex:1 1 420px;max-width:min(100%,565px);display:flex;align-items:center;justify-content:center}
+.rr-v63-college-feature .rr-v62-college-about-logo img{width:100%;height:auto}
+@media(max-width:900px){.rr-v63-college-feature{display:flex;flex-direction:column;align-items:stretch}.rr-v63-college-feature .rr-v62-college-copy{flex:auto}.rr-v63-college-feature .rr-v62-college-about-logo{flex:auto;max-width:min(100%,520px);align-self:center}.rr-v63-college-heading{font-size:clamp(34px,6vw,58px)}}
