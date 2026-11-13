@@ -1,0 +1,8 @@
+RED RIOT RACING — V6.0
+Based directly on V5.12.
+
+Added an editorial, unboxed Three Rs / One Identity section to the About page, immediately following the foundation and mission text. Each word begins with an oversized red R; remaining letters are smaller and white. Includes approved RED/RIOT/RACING copy. Responsive layout.
+
+Pages CMS: Added a standalone editor named "About page — Three Rs / Our identity" backed by data/editor-three-rs.json. The installer appends this CMS entry to the current repository config and preserves all existing CMS data, sponsor/leadership files and uploaded media.
+
+No other site page designs intentionally changed. Test on redesign-preview before publishing main.
