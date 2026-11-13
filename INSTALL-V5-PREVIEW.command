@@ -16,7 +16,7 @@ fi
 if [[ -n "$(git status --porcelain)" ]]; then
   osascript -e 'display alert "Uncommitted changes" message "Commit or stash any current changes in GitHub Desktop first. Nothing changed."'; exit 1
 fi
-BACKUP="$HOME/Desktop/Red-Riot-Racing-Pre-V510-$(date +%Y%m%d-%H%M%S).zip"
+BACKUP="$HOME/Desktop/Red-Riot-Racing-Pre-V512-$(date +%Y%m%d-%H%M%S).zip"
 /usr/bin/ditto -c -k --sequesterRsrc "$REPO" "$BACKUP"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -56,4 +56,4 @@ cat >> "$REPO/.pages.yml" <<'YAML'
     type: boolean
 YAML
 fi
-osascript -e 'display dialog "V5.10 preview installed on redesign-preview. Current content, sponsors, leadership, updates and media were preserved. Your emergency backup is on the Desktop. Review in GitHub Desktop before committing." buttons {"OK"} default button "OK"'
+osascript -e 'display dialog "V5.12 preview installed on redesign-preview. Current content, sponsors, leadership, updates and media were preserved. Your emergency backup is on the Desktop. Review in GitHub Desktop before committing." buttons {"OK"} default button "OK"'

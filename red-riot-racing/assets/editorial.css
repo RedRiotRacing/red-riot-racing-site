@@ -572,3 +572,24 @@ body{background:var(--black);color:var(--white)}
 @media(max-width:650px){
   .closing .rr-v58-merch-loop strong{font-size:clamp(39px,10vw,77px)!important}
 }
+
+/* V5.11: About page mission prominence, without changing the card or surrounding text. */
+.text-page .note-panel p{font-size:clamp(23px,2.35vw,36px)!important;line-height:1.35!important;letter-spacing:-.012em}
+
+/* V5.11: Keep the red dot attached to the 2028 heading instead of allowing
+   the general .road-head h2 span {display:block} rule to split it off. */
+.road-head h2.road-standalone-year>.punctuation-unit{display:inline-block!important;white-space:nowrap!important}
+.road-head h2.road-standalone-year>.punctuation-unit>.red{display:inline!important;vertical-align:baseline!important}
+
+/* V5.12: Render the Road to 2028 page punctuation as the heading's own inline pseudo-element.
+   This cannot be separated by the general .road-head h2 span {display:block} rule. */
+.road-head h2.road-standalone-year::after {
+  content: ".";
+  display: inline !important;
+  color: #E32636 !important;
+  font: inherit !important;
+  vertical-align: baseline !important;
+  white-space: nowrap !important;
+}
+/* Keep the homepage Road to 2028 title's red period inline as well. */
+.road-head-v3 h2 .road-year > .red {display:inline!important;vertical-align:baseline!important}

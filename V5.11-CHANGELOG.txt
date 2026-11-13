@@ -1,0 +1,12 @@
+Red Riot Racing V5.11 — precise wording and typography corrections
+
+Only five requested changes relative to V5.10:
+1. Homepage first-section heading: “McPHERSON COLLEGE MOTORSPORT.”
+2. Remove stock-car-photography disclaimer from the homepage machine section.
+3. Remove “TEAM-OWNED IMAGERY ONLY” from the vehicle development placeholder.
+4. Enlarge the existing About-page mission text inside its existing note panel.
+5. Rejoin red punctuation to the oversized “2028” title on Road to 2028.
+
+No other layouts, pages, CMS configuration, profile data or media are intentionally changed.
+
+INSTALL: In GitHub Desktop select redesign-preview, fetch/pull, ensure clean working tree; unzip and double-click INSTALL-V5-PREVIEW.command; select repository root. Installer saves a Desktop backup, retains live data/media, and leaves main unchanged. Review the diff before committing.
