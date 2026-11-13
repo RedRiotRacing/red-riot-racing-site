@@ -610,3 +610,18 @@ body{background:var(--black);color:var(--white)}
 .rr-v6-story-detail p{font-size:clamp(16px,1.35vw,20px);line-height:1.75;color:#c9cdd4;margin:20px 0 0;max-width:680px}
 @media(max-width:980px){.rr-v6-story-row{grid-template-columns:1fr;gap:35px}.rr-v6-story-r{font-size:clamp(100px,22vw,210px)}.rr-v6-story-rest,.rr-v6-story-period{font-size:clamp(49px,10vw,96px)}}
 @media(max-width:560px){.rr-v6-story-row{padding:50px 0;gap:26px}.rr-v6-story-r{font-size:clamp(95px,27vw,160px)}.rr-v6-story-rest,.rr-v6-story-period{font-size:clamp(45px,12vw,74px)}.rr-v6-story-detail p{font-size:16px;line-height:1.65}.rr-v6-story-intro h2{font-size:clamp(32px,9vw,53px)}}
+
+/* V6.2 — Official McPherson College institutional recognition (logos preserve original paths). */
+.rr-v62-college-about{margin-top:clamp(40px,6vw,88px);padding-top:clamp(24px,3vw,40px);border-top:1px solid rgba(40,43,49,.25);display:flex;align-items:center;justify-content:space-between;gap:clamp(20px,4vw,56px);flex-wrap:wrap}
+.rr-v62-college-copy{flex:1 1 320px;max-width:650px}
+.rr-v62-college-kicker{display:block;font-size:11px;letter-spacing:.14em;font-weight:700;margin-bottom:12px;color:#a71e22}
+.rr-v62-college-copy p{margin:0;color:#555b62;line-height:1.65;font-size:clamp(14px,1.3vw,18px)}
+.rr-v62-college-about-logo{display:block;flex:0 1 330px;max-width:min(100%,330px)}
+.rr-v62-college-about-logo img{width:100%;height:auto;display:block;object-fit:contain}
+.rr-v62-college-sponsor{margin-top:clamp(20px,2vw,32px);padding-top:22px;border-top:1px solid rgba(22,25,28,.25);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.rr-v62-college-sponsor .rr-v62-college-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6c7379}
+.rr-v62-college-sponsor img{width:clamp(185px,20vw,260px);max-width:100%;height:auto;display:block}
+.rr-v62-college-footer{display:inline-block;margin-top:24px;max-width:min(270px,100%)}
+.rr-v62-college-footer img{display:block;width:100%;height:auto;object-fit:contain}
+.rr-v62-college-footer-label{display:block;margin-top:8px;color:#a9adb3;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:720px){.rr-v62-college-about{display:block}.rr-v62-college-about-logo{margin-top:20px}.rr-v62-college-sponsor{align-items:flex-start}}

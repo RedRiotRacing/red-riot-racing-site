@@ -1,0 +1,7 @@
+Red Riot Racing V6.2 — Official McPherson College recognition
+
+Added official college logo, unchanged vector paths, to About page (color on light section), Sponsorship page (color on light section), and footer (white logo on dark section).
+The supplied white college logo PDF included a dark full-page backdrop; the backdrop is removed from the SVG export while keeping all original logo path artwork intact. Source PDFs are included unmodified for reference.
+No other sections, CMS data, or navigation logic intentionally altered. The installer keeps existing current /data, /media, and root .pages.yml.
+
+Install on redesign-preview, review before merging to main.

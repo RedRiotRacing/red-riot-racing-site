@@ -1,0 +1,17 @@
+RED RIOT RACING V6.1 — CACHE FRESHNESS FIX
+
+Based on V6.0. This release changes no intended website layout, logo, CMS fields or content.
+
+CHANGES
+- All page templates now reference assets/app.js and assets/editorial.css using a content-based version query. The admin page also versions assets/styles.css.
+- Dynamic Pages CMS JSON loads append a unique query parameter on each page load and request cache: no-store, so subsequent visits retrieve the latest information.
+- Cloudflare Pages _headers adds no-cache revalidation for site assets and no-store for data JSON. No dashboard caching rules are changed.
+
+INSTALL
+Use INSTALL-V5-PREVIEW.command on the redesign-preview branch. The installer preserves current repository data and media, and writes a Desktop backup. Review the changes before committing.
+
+NOTES
+- Test on your Cloudflare preview site first. Only publish to main after verifying a new CMS change shows in a normal browser reload.
+- Cloudflare dashboard Cache Rules/Browser Cache TTL may override page-level headers. If stale content persists even after this version, inspect rules and actual response headers.
+- An already-open webpage does not live-update automatically; visitors can use a normal refresh.
+- In future code releases, the asset URL version should change when assets change. This package versions by content hashes; do not reuse its version tokens for new JS/CSS versions.
