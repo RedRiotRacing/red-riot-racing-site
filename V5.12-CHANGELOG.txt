@@ -1,0 +1,3 @@
+Red Riot Racing V5.12
+
+Fixed the detached red period in the large 2028 heading on the Road to 2028 page. The period is now generated inline by CSS instead of a nested span, preventing existing heading rules from pushing it below the year. Also ensures the homepage Road to 2028 year dot remains inline. All other website files and preserved CMS content remain as V5.11.
