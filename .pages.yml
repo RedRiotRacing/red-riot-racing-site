@@ -671,3 +671,19 @@ content:
   - name: visible
     label: Display this concept
     type: boolean
+
+- name: editor_three_rs
+  label: About page — Three Rs / Our identity
+  type: file
+  path: red-riot-racing/data/editor-three-rs.json
+  format: json
+  fields:
+  - name: red
+    label: Red — Our roots
+    type: text
+  - name: riot
+    label: Riot — Our approach
+    type: text
+  - name: racing
+    label: Racing — Our ambition
+    type: text
