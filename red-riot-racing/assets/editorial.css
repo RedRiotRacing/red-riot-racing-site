@@ -636,3 +636,9 @@ body{background:var(--black);color:var(--white)}
 .rr-v63-college-feature .rr-v62-college-about-logo{flex:1 1 420px;max-width:min(100%,565px);display:flex;align-items:center;justify-content:center}
 .rr-v63-college-feature .rr-v62-college-about-logo img{width:100%;height:auto}
 @media(max-width:900px){.rr-v63-college-feature{display:flex;flex-direction:column;align-items:stretch}.rr-v63-college-feature .rr-v62-college-copy{flex:auto}.rr-v63-college-feature .rr-v62-college-about-logo{flex:auto;max-width:min(100%,520px);align-self:center}.rr-v63-college-heading{font-size:clamp(34px,6vw,58px)}}
+
+/* V6.4: exact McPherson College emblem beside FORMULA SAE in homepage kicker. */
+.rr-v5-kicker.rr-v64-kicker{display:flex;align-items:center;gap:clamp(12px,1.4vw,20px);margin-bottom:32px;}
+.rr-v64-college-mark{display:block;width:clamp(32px,3.5vw,44px);height:auto;aspect-ratio:1;flex:none;object-fit:contain;}
+.rr-v64-kicker-slash{color:#e12a38;font-weight:700;}
+@media(max-width:560px){.rr-v5-kicker.rr-v64-kicker{gap:10px;flex-wrap:wrap}.rr-v64-college-mark{width:32px}}
