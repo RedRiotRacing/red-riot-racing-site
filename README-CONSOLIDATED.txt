@@ -130,3 +130,6 @@ and baseline alignment as the R and ACING in the RACING heading.
 The McPHERSON COLLEGE text retains its font size, color, and line break.
 The college logo remains removed from this story section.
 Install with INSTALL-V5-PREVIEW.command on the redesign-preview branch.
+
+
+V6.11 — About page: Kept the B/Y interlock identical to V6.10. Put McPHERSON COLLEGE. on a single line. The fourth editorial entry spans the section width, with its description below it; on small screens the college wording responsively scales to stay on one line. Existing CMS files and media are preserved by the installer.

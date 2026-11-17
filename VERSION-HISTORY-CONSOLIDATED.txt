@@ -255,3 +255,6 @@ Rebuilt the BY heading with the original Three Rs' R/remaining-letter class
 pair for pixel-equivalent font size and baseline behavior. Kept the
 McPHERSON COLLEGE words styled separately at their existing size.
 Preserved V6.9 consolidated documentation and current CMS preservation installer.
+
+
+V6.11 — Fourth story heading: removed forced line break in McPHERSON COLLEGE, preserved approved B/Y alignment, adjusted fourth-entry width/responsiveness only. No other story entries changed.
