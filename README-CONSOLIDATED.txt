@@ -1,3 +1,5 @@
+V6.18: Reversed only the accidental fourth-section column swap. Red BY and McPherson College are on left; paragraph on right.
+
 RED RIOT RACING — CONSOLIDATED README
 This file combines the previous README text documents for easier reference.
 
