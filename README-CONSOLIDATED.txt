@@ -133,3 +133,6 @@ Install with INSTALL-V5-PREVIEW.command on the redesign-preview branch.
 
 
 V6.11 — About page: Kept the B/Y interlock identical to V6.10. Put McPHERSON COLLEGE. on a single line. The fourth editorial entry spans the section width, with its description below it; on small screens the college wording responsively scales to stay on one line. Existing CMS files and media are preserved by the installer.
+
+
+V6.13: BY McPHERSON COLLEGE remains one continuous line within its original left column; original right-side paragraph and approved B/Y letter styling preserved.

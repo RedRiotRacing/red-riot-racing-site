@@ -11,3 +11,6 @@ Restored the original two-column About / Three Rs layout after V6.11 unintention
 5. Review, commit, and push. Inspect the Cloudflare preview before merging to main.
 
 `README-CONSOLIDATED.txt` and `VERSION-HISTORY-CONSOLIDATED.txt` contain the consolidated legacy notes.
+
+
+V6.13: corrected one-line heading inside the left grid column without shifting description.

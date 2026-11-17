@@ -734,3 +734,60 @@ body{background:var(--black);color:var(--white)}
 .rr-v65-college-story-name .rr-v610-college-rest{font-size:clamp(22px,2.55vw,38px);white-space:nowrap;line-height:1.1;letter-spacing:-.065em;margin:0}
 @media(max-width:980px){.rr-v65-college-story.rr-v6-story-row{grid-template-columns:1fr;gap:35px}.rr-v65-college-story-name .rr-v610-college-rest{font-size:clamp(24px,5vw,43px)}}
 @media(max-width:560px){.rr-v65-college-story-name .rr-v610-college-rest{font-size:clamp(20px,5.4vw,32px)}}
+
+
+/* V6.13 — Targeted fix: BY and McPHERSON COLLEGE. are ONE inline headline
+   inside the ORIGINAL left grid column. The body copy remains untouched in
+   the original right column. Preserve the already approved B/Y proportions. */
+.rr-v65-college-story.rr-v6-story-row{
+  grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);
+  column-gap:clamp(35px,6vw,120px);
+  align-items:center;
+}
+.rr-v65-college-story .rr-v65-college-story-name{
+  display:flex;
+  flex-direction:row;
+  align-items:baseline;
+  justify-content:flex-start;
+  gap:0;
+  flex-wrap:nowrap;
+  width:100%;
+  min-width:0;
+  white-space:nowrap;
+}
+.rr-v65-college-story .rr-v612-by{
+  display:inline-flex;
+  align-items:baseline;
+  flex:0 0 auto;
+  white-space:nowrap;
+  line-height:.85;
+}
+.rr-v65-college-story .rr-v612-by>.rr-v6-story-r,
+.rr-v65-college-story .rr-v612-by>.rr-v6-story-rest{
+  align-self:baseline;
+  flex:0 0 auto;
+  margin:0;
+  padding:0;
+  position:static;
+  transform:none;
+}
+.rr-v65-college-story .rr-v65-college-story-name>.rr-v610-college-rest{
+  display:inline-block;
+  flex:0 1 auto;
+  min-width:0;
+  margin:0 0 0 .08em;
+  padding:0;
+  font-size:clamp(11px,1.43vw,23px);
+  line-height:1;
+  white-space:nowrap;
+  letter-spacing:-.065em;
+  align-self:baseline;
+}
+.rr-v65-college-story .rr-v610-college-rest .rr-v6-story-period{font-size:inherit}
+@media(max-width:980px){
+ .rr-v65-college-story.rr-v6-story-row{grid-template-columns:minmax(0,1fr);gap:35px}
+ .rr-v65-college-story .rr-v65-college-story-name>.rr-v610-college-rest{font-size:clamp(10px,2.35vw,24px)}
+}
+@media(max-width:560px){
+ .rr-v65-college-story .rr-v65-college-story-name>.rr-v610-college-rest{font-size:clamp(9px,2.15vw,13px)}
+}
