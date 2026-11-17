@@ -663,3 +663,6 @@ body{background:var(--black);color:var(--white)}
 .rr-v65-college-story .rr-v65-college-logo-link{display:block;width:min(100%,330px);margin-top:clamp(24px,3vw,38px)}
 @media(max-width:980px){.rr-v66-college-b{font-size:clamp(100px,22vw,210px)}.rr-v66-college-word{font-size:clamp(30px,6vw,64px)}}
 @media(max-width:560px){.rr-v66-college-b{font-size:clamp(95px,27vw,160px)}.rr-v66-college-word{font-size:clamp(24px,6.4vw,44px)}.rr-v65-college-story .rr-v65-college-logo-link{max-width:260px}}
+
+/* V6.7 — Match the R/A interlock for B/Y without changing McPherson College lettering. */
+.rr-v65-college-story-name .rr-v66-college-word{margin-left:-.12em;position:relative;z-index:1}
