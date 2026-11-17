@@ -642,3 +642,12 @@ body{background:var(--black);color:var(--white)}
 .rr-v64-college-mark{display:block;width:clamp(32px,3.5vw,44px);height:auto;aspect-ratio:1;flex:none;object-fit:contain;}
 .rr-v64-kicker-slash{color:#e12a38;font-weight:700;}
 @media(max-width:560px){.rr-v5-kicker.rr-v64-kicker{gap:10px;flex-wrap:wrap}.rr-v64-college-mark{width:32px}}
+
+/* V6.5: fourth editorial pillar, matching Three Rs hierarchy without a card */
+.rr-v65-college-story-name{align-items:flex-start;gap:clamp(10px,1.3vw,20px);white-space:normal;letter-spacing:0}
+.rr-v65-college-by{color:#e32636;font-size:clamp(60px,9vw,148px);line-height:.95;font-weight:800;font-style:italic;letter-spacing:-.09em;flex-shrink:0}
+.rr-v65-college-word{color:#fff;font-size:clamp(30px,3.6vw,66px);line-height:1.08;letter-spacing:-.06em;align-self:center}
+.rr-v65-college-word .rr-v6-story-period{font-size:inherit}
+.rr-v65-college-logo-link{display:inline-block;max-width:min(100%,320px);margin-top:32px}
+.rr-v65-college-logo-link img{display:block;width:100%;height:auto;max-height:120px;object-fit:contain;object-position:left center}
+@media(max-width:560px){.rr-v65-college-by{font-size:clamp(68px,17vw,110px)}.rr-v65-college-word{font-size:clamp(28px,7.6vw,47px)}.rr-v65-college-logo-link{max-width:260px;margin-top:25px}}
