@@ -136,3 +136,6 @@ V6.11 — About page: Kept the B/Y interlock identical to V6.10. Put McPHERSON C
 
 
 V6.13: BY McPHERSON COLLEGE remains one continuous line within its original left column; original right-side paragraph and approved B/Y letter styling preserved.
+
+
+V6.16: By McPherson College section now follows the first proposed concept: entire oversized BY in red, McPHERSON and COLLEGE. on two lines beside it, with the foundation label and approved paragraph left-aligned underneath. The first three Rs and all other site sections were not changed.

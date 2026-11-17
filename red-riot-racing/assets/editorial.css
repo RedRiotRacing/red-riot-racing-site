@@ -791,3 +791,70 @@ body{background:var(--black);color:var(--white)}
 @media(max-width:560px){
  .rr-v65-college-story .rr-v65-college-story-name>.rr-v610-college-rest{font-size:clamp(9px,2.3vw,14px)}
 }
+
+
+/* V6.16 — First approved concept: full-red BY, two-line school name, body
+   directly below on the left. Scope strictly to the fourth story row. */
+.rr-v65-college-story.rr-v6-story-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  align-items:start;
+  gap:clamp(24px,3vw,44px);
+}
+.rr-v65-college-story .rr-v65-college-story-name{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:flex-start;
+  flex-wrap:nowrap;
+  gap:clamp(13px,2.2vw,36px);
+  max-width:100%;
+  width:100%;
+  white-space:normal;
+}
+.rr-v65-college-story .rr-v616-by{
+  display:block;
+  flex:0 0 auto;
+  color:#e32636;
+  font-family:'Oxanium','Chakra Petch',sans-serif;
+  font-style:italic;
+  font-weight:800;
+  font-size:clamp(112px,16vw,260px);
+  letter-spacing:-.135em;
+  line-height:.78;
+  white-space:nowrap;
+  padding-right:.13em;
+}
+.rr-v65-college-story .rr-v616-school{
+  display:flex;
+  flex-direction:column;
+  flex:0 1 auto;
+  min-width:0;
+  font-family:'Oxanium','Chakra Petch',sans-serif;
+  font-style:italic;
+  font-weight:800;
+  font-size:clamp(32px,6.2vw,102px);
+  line-height:.98;
+  letter-spacing:-.065em;
+  color:#fff;
+  white-space:nowrap;
+}
+.rr-v65-college-story .rr-v616-school .rr-v6-story-period{
+  color:#e32636;
+  font-size:inherit;
+}
+.rr-v65-college-story .rr-v6-story-detail{
+  width:100%;
+  max-width:750px;
+  text-align:left;
+}
+@media(max-width:980px){
+  .rr-v65-college-story .rr-v616-by{font-size:clamp(100px,22vw,210px)}
+  .rr-v65-college-story .rr-v616-school{font-size:clamp(26px,7vw,72px)}
+}
+@media(max-width:560px){
+  .rr-v65-college-story .rr-v65-college-story-name{gap:clamp(8px,1.5vw,16px)}
+  .rr-v65-college-story .rr-v616-by{font-size:clamp(86px,25vw,150px)}
+  .rr-v65-college-story .rr-v616-school{font-size:clamp(18px,5.5vw,35px)}
+  .rr-v65-college-story.rr-v6-story-row{gap:25px}
+}
