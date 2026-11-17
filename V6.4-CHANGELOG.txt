@@ -1,7 +1,0 @@
-RED RIOT RACING V6.4 — HOMEPAGE COLLEGE EMBLEM
-
-The homepage hero's small kicker changes from the words "McPHERSON COLLEGE / FORMULA SAE" to the exact McPherson College M emblem / FORMULA SAE.
-
-The M emblem is a cropped viewport of the college-provided full-color official RGB SVG, preserving original vector paths and colors. No logo artwork was recreated. All other page layouts and content are unchanged.
-
-The package is a complete website and includes the safe installer, which preserves the destination repository's CMS data, media and Pages CMS configuration. It installs only to redesign-preview and creates an emergency backup before copying.

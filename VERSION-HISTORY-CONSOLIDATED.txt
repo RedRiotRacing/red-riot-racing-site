@@ -1,0 +1,267 @@
+RED RIOT RACING — CONSOLIDATED VERSION NOTES
+This file combines the previous V__ / changelog / version text documents into one reference file.
+
+================================================================================
+V4-CHANGELOG.txt
+================================================================================
+Red Riot Racing V4 preview — dark-first motorsport redesign. White backgrounds eliminated through dark panel overrides. Sponsorship slogan standardized to BE PART OF THE RIOT. Preview branch only.
+
+================================================================================
+V4-FINAL-CHANGELOG.txt
+================================================================================
+RED RIOT RACING | V4 FINAL REVISIONS
+
+Base: V4 Dark Edition with the previous REFINE typography correction.
+
+1. REFINE retains the matching bold, angled TEST treatment in the red process band.
+2. Underlines beneath THE RIOT. are solid Riot Red (#E32636), without pink/white ends.
+3. The period in all styled THE RIOT. sponsorship headlines is Riot Red.
+4. The sponsorship page CONTACT THE TEAM button is Riot Red with white text and darker-red hover.
+5. The sponsorship-page OUR PARTNERS grid has been replaced by six vertically stacked, centered tiers:
+   Title Sponsor (white line), Red Sponsor (red), Platinum (platinum), Gold (gold), Silver (silver), Bronze (bronze).
+   Tier numbers removed; heading sizes decrease with rank. The largest Title Sponsor is first.
+6. Sponsor records can be added in data/sponsors.json using tier values Title, Red, Platinum, Gold, Silver, or Bronze; names/logos/links appear within the correct section.
+7. No car rendering images included. V4 dark styling, pages, social links, merch, and Formula SAE link retained.
+
+Deployment: extract ZIP; replace red-riot-racing folder on redesign-preview; keep .pages.yml at repository root.
+
+================================================================================
+V4-FINAL-POLISH-CHANGELOG.txt
+================================================================================
+RED RIOT RACING — V4 FINAL POLISH
+
+Foundation: V4 with sponsor tiers and logo placements. No car imagery.
+- Increased contrast of punctuation and underline on red sponsorship backgrounds (near-white).
+- Exclusive Title Sponsor section: singular title, one available placeholder and one visible listed title sponsor maximum.
+- Kept existing sponsor tier font styling while color-matching tier headings to their divider lines.
+- Prevented headline periods from wrapping away from the preceding word in common hardcoded headings, and normalized punctuation styling.
+- Corrected Contact page PROGRESS period to matching font and Riot Red.
+- Merch headline RIOT and its period now Riot Red; other headline text remains white.
+- Preserved corrected REFINE font, red sponsorship contact button, social links, merch content, and rest of V4.
+
+Deployment: replace red-riot-racing directory on redesign-preview branch. Copy .pages.yml to repository root if needed.
+
+================================================================================
+V4-HOMEPAGE-PERIOD-FIX.txt
+================================================================================
+Final V4 patch: Added positive spacing before the red period after FUTURE in the homepage hero. No other website files or styling altered.
+
+================================================================================
+V4-REFINE-FIX.txt
+================================================================================
+V4 minor fix: REFINE now uses the same accent typography as TEST. No other changes.
+
+================================================================================
+V4-SPONSOR-LOGO-UPDATE.txt
+================================================================================
+Sponsor tier headings pluralized. Added centered, visibly reserved future logo slots under each sponsorship tier, sized by tier prominence. No fictional companies/logos; approved color divider lines, dark V4 design and other changes retained.
+
+================================================================================
+V4.5.1-LAYOUT-FIX.txt
+================================================================================
+Red Riot Racing V4.5.1 — CTA Layout Correction
+
+Based on V4.5 Button & Navigation Refinement.
+- Corrected the red closing “BE PART OF THE RIOT.” section: headline, supporting text, and CTA have controlled vertical spacing and one common alignment edge.
+- Prevented conflicting center/left alignment rules from fighting at tablet and mobile widths.
+- Kept sponsorship buttons attached to their associated copy blocks.
+- Kept Road to 2028 CTA immediately after the roadmap description.
+- Preserved V4.5 white/red hover inversion and navigation treatment.
+- No changes to page content, official branding placeholders, site colors, sponsor tier data, or fonts.
+
+QA note: CSS/package and JavaScript syntax checked. A rendered browser QA check was unavailable in this environment; review on Cloudflare preview before merging.
+
+================================================================================
+V4.7-CHANGELOG.txt
+================================================================================
+V4.7 Updates page editorial layout: month above large year, final two year digits Riot Red, clean white vertical separator, title and description together, CMS data preserved. No changes to .pages.yml or data files.
+
+================================================================================
+V5.10-CHANGELOG.txt
+================================================================================
+Red Riot Racing V5.10 — Leadership label correction
+
+- Restores the middle-size Business leadership title to Head of Business (not Head of Finance).
+- Existing Pages CMS profile whose role is Head of Finance still maps to this slot, but displays Head of Business.
+- President and Vice President retained.
+- No other website code, layout, CMS configuration, or site content changed from V5.9.
+- Installer protects current repository data and media; install on redesign-preview only.
+
+================================================================================
+V5.11-CHANGELOG.txt
+================================================================================
+Red Riot Racing V5.11 — precise wording and typography corrections
+
+Only five requested changes relative to V5.10:
+1. Homepage first-section heading: “McPHERSON COLLEGE MOTORSPORT.”
+2. Remove stock-car-photography disclaimer from the homepage machine section.
+3. Remove “TEAM-OWNED IMAGERY ONLY” from the vehicle development placeholder.
+4. Enlarge the existing About-page mission text inside its existing note panel.
+5. Rejoin red punctuation to the oversized “2028” title on Road to 2028.
+
+No other layouts, pages, CMS configuration, profile data or media are intentionally changed.
+
+INSTALL: In GitHub Desktop select redesign-preview, fetch/pull, ensure clean working tree; unzip and double-click INSTALL-V5-PREVIEW.command; select repository root. Installer saves a Desktop backup, retains live data/media, and leaves main unchanged. Review the diff before committing.
+
+================================================================================
+V5.12-CHANGELOG.txt
+================================================================================
+Red Riot Racing V5.12
+
+Fixed the detached red period in the large 2028 heading on the Road to 2028 page. The period is now generated inline by CSS instead of a nested span, preventing existing heading rules from pushing it below the year. Also ensures the homepage Road to 2028 year dot remains inline. All other website files and preserved CMS content remain as V5.11.
+
+================================================================================
+V5.3-CHANGELOG.txt
+================================================================================
+V5.3 MERCHANDISE GRID
+- Displays all 10 proposed products by specific name.
+- Places related items together under Jackets & Layers, Shirts & Polos, Headwear, Accessories.
+- Removes generic category labels inside cards.
+- Unconfirmed products remain marked In Development.
+- Installer preserves existing CMS data and media; grouping works independently of JSON order.
+
+================================================================================
+V5.4-CHANGELOG.txt
+================================================================================
+V5.4 merchandise display correction: removes repeated official logo placeholders, fixes low-contrast product names, restores readable 3/2/1 responsive columns, keeps 10 specific merchandise concepts grouped and editable in Pages CMS. Entire website included. Installer preserves existing data and media.
+
+================================================================================
+V5.5-CHANGELOG.txt
+================================================================================
+RED RIOT RACING — V5.5 LEADERSHIP CENTERING
+
+- Directors, Heads and Leads centered within their portrait cards.
+- Incomplete profile rows now center the final card instead of leaving it at left.
+- Engineering and Business division headings centered.
+- Role labels, names and biographies centered.
+- Photo size hierarchy remains Director > Head > Lead.
+- All Lead portraits remain consistently sized.
+- No unrelated page design or current CMS data changed.
+- Uses the same full website safe-swap installer as V5.4.
+
+================================================================================
+V5.6-CHANGELOG.txt
+================================================================================
+RED RIOT RACING V5.6 — MISSION STATEMENT
+
+- Adds the approved one-sentence mission statement as a prominent, typographic, dark homepage section.
+- The headline is simply MISSION STATEMENT; the statement text itself appears large and is reproduced verbatim.
+- Motorsport receives red emphasis only; no extra copy is inserted into the statement.
+- The About page displays the same mission statement without the prior pending placeholder.
+- Pages CMS retains one source field: Website content & links > Official mission statement. The website uses the approved statement as the fallback if existing live CMS data has not yet filled it.
+- Existing V5.5 content, logos, sponsors, merchandise, leadership structure and social links are preserved.
+- The installer preserves existing site.json, media, sponsors, announcements and other CMS data.
+
+IMPORTANT: The complete package includes baseline CMS data for completeness, but INSTALL-V5-PREVIEW.command overlays the user's current CMS data, which is deliberate. If a previously saved, different mission statement exists, set it to the approved text in Pages CMS to get the identical official statement.
+
+================================================================================
+V5.7-CHANGELOG.txt
+================================================================================
+V5.7 Sponsor CTA contrast fix
+
+On the Sponsors page, the closing section heading HELP US REACH THE GRID. is now fully legible: THE GRID and its final period are white against the red section background. The original typeface, geometry, spacing, content, and all other pages are unchanged.
+
+Use INSTALL-V5-PREVIEW.command on redesign-preview. The installer protects current data and media, with a local backup.
+
+================================================================================
+V5.8-CHANGELOG.txt
+================================================================================
+V5.8 - Merchandise closing heading typography
+
+Fixed THE LOOP. in the red merchandise closing section to use the same bold italic motorsport display face as other emphasized site headings. Kept STAY IN in the thin face, preserving placement, contrast, and copy. No other visual sections changed. All existing site files remain in this complete safe-swap package.
+
+================================================================================
+V5.9-CHANGELOG.txt
+================================================================================
+Red Riot Racing V5.9 — Leadership title update only
+
+- Director of Engineering displays as President.
+- Director of Business displays as Vice President.
+- Existing Pages CMS records with the old titles still match the correct positions and show the new names.
+- The President and Vice President retain the same prominent portrait sizes and placement.
+- All other roles, pages, styles, content, and CMS data remain as in V5.8.
+- Existing content is preserved by the safe-swap installer.
+
+================================================================================
+V6.0-CHANGELOG.txt
+================================================================================
+RED RIOT RACING — V6.0
+Based directly on V5.12.
+
+Added an editorial, unboxed Three Rs / One Identity section to the About page, immediately following the foundation and mission text. Each word begins with an oversized red R; remaining letters are smaller and white. Includes approved RED/RIOT/RACING copy. Responsive layout.
+
+Pages CMS: Added a standalone editor named "About page — Three Rs / Our identity" backed by data/editor-three-rs.json. The installer appends this CMS entry to the current repository config and preserves all existing CMS data, sponsor/leadership files and uploaded media.
+
+No other site page designs intentionally changed. Test on redesign-preview before publishing main.
+
+================================================================================
+V6.1-CACHE-FIX.txt
+================================================================================
+RED RIOT RACING V6.1 — CACHE FRESHNESS FIX
+
+Based on V6.0. This release changes no intended website layout, logo, CMS fields or content.
+
+CHANGES
+- All page templates now reference assets/app.js and assets/editorial.css using a content-based version query. The admin page also versions assets/styles.css.
+- Dynamic Pages CMS JSON loads append a unique query parameter on each page load and request cache: no-store, so subsequent visits retrieve the latest information.
+- Cloudflare Pages _headers adds no-cache revalidation for site assets and no-store for data JSON. No dashboard caching rules are changed.
+
+INSTALL
+Use INSTALL-V5-PREVIEW.command on the redesign-preview branch. The installer preserves current repository data and media, and writes a Desktop backup. Review the changes before committing.
+
+NOTES
+- Test on your Cloudflare preview site first. Only publish to main after verifying a new CMS change shows in a normal browser reload.
+- Cloudflare dashboard Cache Rules/Browser Cache TTL may override page-level headers. If stale content persists even after this version, inspect rules and actual response headers.
+- An already-open webpage does not live-update automatically; visitors can use a normal refresh.
+- In future code releases, the asset URL version should change when assets change. This package versions by content hashes; do not reuse its version tokens for new JS/CSS versions.
+
+================================================================================
+V6.2-CHANGELOG.txt
+================================================================================
+Red Riot Racing V6.2 — Official McPherson College recognition
+
+Added official college logo, unchanged vector paths, to About page (color on light section), Sponsorship page (color on light section), and footer (white logo on dark section).
+The supplied white college logo PDF included a dark full-page backdrop; the backdrop is removed from the SVG export while keeping all original logo path artwork intact. Source PDFs are included unmodified for reference.
+No other sections, CMS data, or navigation logic intentionally altered. The installer keeps existing current /data, /media, and root .pages.yml.
+
+Install on redesign-preview, review before merging to main.
+
+================================================================================
+V6.3-CHANGELOG.txt
+================================================================================
+V6.3: Made McPherson College institutional feature prominent on About page only; enlarged exact official logo, added bold heading, expanded section spacing, updated cache-busting asset version. No other content or page layout changes.
+
+================================================================================
+V6.4-CHANGELOG.txt
+================================================================================
+RED RIOT RACING V6.4 — HOMEPAGE COLLEGE EMBLEM
+
+The homepage hero's small kicker changes from the words "McPHERSON COLLEGE / FORMULA SAE" to the exact McPherson College M emblem / FORMULA SAE.
+
+The M emblem is a cropped viewport of the college-provided full-color official RGB SVG, preserving original vector paths and colors. No logo artwork was recreated. All other page layouts and content are unchanged.
+
+The package is a complete website and includes the safe installer, which preserves the destination repository's CMS data, media and Pages CMS configuration. It installs only to redesign-preview and creates an emergency backup before copying.
+
+================================================================================
+red-riot-racing/V5-SOURCE-LOGO-NOTE.txt
+================================================================================
+The logo in assets/official-red-riot-logo.png was rendered directly from page 2 of Final LOGO.pdf (original included as assets/official-red-riot-logo-original.pdf). No logo redrawing, text reconstruction or recoloring was performed.
+
+
+================================================================================
+V6.10 — Heading alignment correction
+================================================================================
+Rebuilt the BY heading with the original Three Rs' R/remaining-letter class
+pair for pixel-equivalent font size and baseline behavior. Kept the
+McPHERSON COLLEGE words styled separately at their existing size.
+Preserved V6.9 consolidated documentation and current CMS preservation installer.
+
+
+V6.11 — Fourth story heading: removed forced line break in McPHERSON COLLEGE, preserved approved B/Y alignment, adjusted fourth-entry width/responsiveness only. No other story entries changed.
+
+V6.12 — Restored 2-column About story: the BY letter pair retains its approved alignment, the college name stays on one line directly underneath, and the original description remains in the right column.
+
+
+V6.13 — Removed the artificial line break between BY and McPHERSON COLLEGE by placing them together in a single non-wrapping left-column headline. Right-column description remains in place.
+
+V6.15 — Enlarged only McPHERSON COLLEGE. in its existing one-line left-column heading. The B/Y, paragraph, and grid layout are unchanged.

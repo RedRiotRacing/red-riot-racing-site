@@ -687,3 +687,6 @@ content:
   - name: racing
     label: Racing — Our ambition
     type: text
+  - name: by_mcpherson_college
+    label: By McPherson College — Our foundation
+    type: text
