@@ -263,3 +263,5 @@ V6.12 — Restored 2-column About story: the BY letter pair retains its approved
 
 
 V6.13 — Removed the artificial line break between BY and McPHERSON COLLEGE by placing them together in a single non-wrapping left-column headline. Right-column description remains in place.
+
+V6.15 — Enlarged only McPHERSON COLLEGE. in its existing one-line left-column heading. The B/Y, paragraph, and grid layout are unchanged.
