@@ -1,24 +1,22 @@
-# Red Riot Racing — Expanded Pages CMS
+# Red Riot Racing V6.9 Complete Safe Swap
 
-This package builds on V4.5.1; no car images are added.
+This package includes the latest safe-swap website files with the following updates:
 
-## Install
-1. On the `redesign-preview` branch, replace the repository’s `red-riot-racing/` folder with the one from this ZIP.
-2. Copy the ZIP-root `.pages.yml` file to the repository root (next to `red-riot-racing/`). This is essential.
-3. Commit and push. In Pages CMS choose `redesign-preview` to test.
-4. Open Homepage Editor, fill in a temporary description, save, and confirm the preview site changes; revert the test afterwards.
-5. Merge into `main` only after validating the preview.
+- Adjusted the **BY McPherson College** fourth-story segment so the **Y** sits like the **A** in **RACING**, instead of floating high against the large **B**.
+- Updated page asset references from **v=6.8** to **v=6.9**.
+- Consolidated the multiple `README*.txt` files into **`README-CONSOLIDATED.txt`**.
+- Consolidated the multiple `V*.txt` version / changelog notes into **`VERSION-HISTORY-CONSOLIDATED.txt`**.
 
-## Expanded editing
-New CMS menus: page-specific editors for Home, About, Leadership, Road to 2028, Sponsors, Updates, Merch, Contact; Navigation & menu; Site-wide announcement and SEO; Sponsor tier headings. Original Settings, Leadership, Sponsors, Updates, Milestones remain.
+## Swap instructions
 
-New page headline overrides are **optional**. Leave them blank to preserve the existing complex V4 headline styling. If you customize a headline, use `|` to separate lines, and `*word*` for emphasis. Changes are applied with the current page’s font and colors, though they may not preserve every original decorative span. Check mobile after editing.
+1. Open the included `red-riot-racing` folder.
+2. Replace the contents of your live site folder with the contents of that folder.
+3. Commit and push, or upload the replacement files.
+4. If a page still shows an older version briefly, refresh once after deployment finishes.
 
-Visibility toggles hide sections, not delete content. Use `true` to show them. Buttons have separately editable labels and destinations. Do not include `↗` in button labels because arrow is retained automatically. URLs must begin with a safe HTTP(S) scheme or be local paths.
+## Main files in this package
 
-Sponsor logos and tier assignment remain editable through the existing Sponsors collection. Existing logo hierarchy remains CSS-defined. The Title Sponsor tier displays only one company. No fake sponsor data is included.
-
-Editors change copy and links, not underlying CSS, geometry, font files, or mechanical website behavior. A few visual components remain code-controlled.
-
-## Important
-Pages CMS writes to the selected Git branch. Make sure it is **redesign-preview** during testing, or saving will affect live production. The `.pages.yml` file and `/red-riot-racing/data` files must be on the same branch.
+- `red-riot-racing/` — the site itself
+- `README-CONSOLIDATED.txt` — combined plain-text readmes
+- `VERSION-HISTORY-CONSOLIDATED.txt` — combined plain-text version notes
+- `.pages.yml` — Pages config
