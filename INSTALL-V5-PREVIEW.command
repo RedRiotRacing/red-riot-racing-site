@@ -16,7 +16,7 @@ fi
 if [[ -n "$(git status --porcelain)" ]]; then
   osascript -e 'display alert "Uncommitted changes" message "Commit or stash any current changes in GitHub Desktop first. Nothing changed."'; exit 1
 fi
-BACKUP="$HOME/Desktop/Red-Riot-Racing-Pre-V67-$(date +%Y%m%d-%H%M%S).zip"
+BACKUP="$HOME/Desktop/Red-Riot-Racing-Pre-V68-$(date +%Y%m%d-%H%M%S).zip"
 /usr/bin/ditto -c -k --sequesterRsrc "$REPO" "$BACKUP"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -80,7 +80,7 @@ cat >> "$REPO/.pages.yml" <<'YAML'
     type: text
 YAML
 fi
-# V6.7: retain the V6.5 behavior and add the fourth description editor without replacing user's existing .pages.yml or JSON.
+# V6.8: retain the V6.5 behavior and add the fourth description editor without replacing user's existing .pages.yml or JSON.
 # If editor_three_rs exists, insert the new field directly after the Racing field.
 if grep -q 'name: editor_three_rs' "$REPO/.pages.yml" && ! grep -q 'name: by_mcpherson_college' "$REPO/.pages.yml"; then
   awk '
@@ -97,4 +97,4 @@ if grep -q 'name: editor_three_rs' "$REPO/.pages.yml" && ! grep -q 'name: by_mcp
   ' "$REPO/.pages.yml" > "$TMP/pages-updated.yml"
   cp "$TMP/pages-updated.yml" "$REPO/.pages.yml"
 fi
-osascript -e 'display dialog "V6.7 preview installed on redesign-preview. Current content, sponsors, leadership, updates and media were preserved. Your emergency backup is on the Desktop. Review in GitHub Desktop before committing." buttons {"OK"} default button "OK"'
+osascript -e 'display dialog "V6.8 preview installed on redesign-preview. Current content, sponsors, leadership, updates and media were preserved. Your emergency backup is on the Desktop. Review in GitHub Desktop before committing." buttons {"OK"} default button "OK"'
