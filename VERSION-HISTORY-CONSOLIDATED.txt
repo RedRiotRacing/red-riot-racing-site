@@ -270,3 +270,5 @@ V6.15 — Enlarged only McPHERSON COLLEGE. in its existing one-line left-column 
 V6.16 — Layout revision to By McPherson College only. Full red BY sized like the other large Rs, school name on two lines beside it, foundation copy under the heading on the left. No official college logo in this segment.
 
 V6.19: Adjusted desktop school heading font size from clamp(19px,1.9vw,32px) to clamp(22px,2.9vw,56px), retaining original layout and wording.
+
+V6.20 — Enlarged McPHERSON / COLLEGE. heading desktop font size only, preserving BY and paragraph placement.
