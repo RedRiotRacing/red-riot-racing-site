@@ -724,15 +724,13 @@ body{background:var(--black);color:var(--white)}
   .rr-v610-college-rest{font-size:clamp(24px,6.4vw,44px)}
 }
 
-/* V6.11: McPHERSON COLLEGE stays on ONE line; B/Y interlock unchanged.
-   Only the fourth story entry uses a full-width editorial row so the
-   unchanged college typography fits beside B/Y without spilling into copy. */
-.rr-v65-college-story.rr-v6-story-row {grid-template-columns:minmax(0,1fr);row-gap:clamp(24px,3vw,40px)}
-.rr-v65-college-story-name {width:100%;max-width:100%;flex-wrap:nowrap;white-space:nowrap}
-.rr-v610-college-rest {white-space:nowrap}
-@media(max-width:980px){
- .rr-v610-college-rest{font-size:clamp(22px,4.3vw,42px)}
-}
-@media(max-width:560px){
- .rr-v610-college-rest{font-size:clamp(13px,3.75vw,22px)}
-}
+/* V6.12: Restore the original 2-column story grid so the description
+   remains alongside the heading. Only McPHERSON COLLEGE is kept together
+   as one unbroken line beneath the existing, approved BY letter pair. */
+.rr-v65-college-story.rr-v6-story-row{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);column-gap:clamp(35px,6vw,120px);align-items:center}
+.rr-v65-college-story-name{display:flex;flex-direction:column;align-items:flex-start;gap:clamp(9px,1.4vw,20px);width:100%;max-width:100%;white-space:normal}
+.rr-v612-by{display:inline-flex;align-items:baseline;white-space:nowrap;font-size:inherit;line-height:.85}
+.rr-v612-by > .rr-v6-story-r,.rr-v612-by > .rr-v6-story-rest{flex:none;align-self:baseline;position:static;margin:0;padding:0;transform:none}
+.rr-v65-college-story-name .rr-v610-college-rest{font-size:clamp(22px,2.55vw,38px);white-space:nowrap;line-height:1.1;letter-spacing:-.065em;margin:0}
+@media(max-width:980px){.rr-v65-college-story.rr-v6-story-row{grid-template-columns:1fr;gap:35px}.rr-v65-college-story-name .rr-v610-college-rest{font-size:clamp(24px,5vw,43px)}}
+@media(max-width:560px){.rr-v65-college-story-name .rr-v610-college-rest{font-size:clamp(20px,5.4vw,32px)}}

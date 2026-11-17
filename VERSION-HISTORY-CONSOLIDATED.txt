@@ -258,3 +258,5 @@ Preserved V6.9 consolidated documentation and current CMS preservation installer
 
 
 V6.11 — Fourth story heading: removed forced line break in McPHERSON COLLEGE, preserved approved B/Y alignment, adjusted fourth-entry width/responsiveness only. No other story entries changed.
+
+V6.12 — Restored 2-column About story: the BY letter pair retains its approved alignment, the college name stays on one line directly underneath, and the original description remains in the right column.
