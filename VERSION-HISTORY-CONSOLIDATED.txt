@@ -247,3 +247,11 @@ red-riot-racing/V5-SOURCE-LOGO-NOTE.txt
 ================================================================================
 The logo in assets/official-red-riot-logo.png was rendered directly from page 2 of Final LOGO.pdf (original included as assets/official-red-riot-logo-original.pdf). No logo redrawing, text reconstruction or recoloring was performed.
 
+
+================================================================================
+V6.10 — Heading alignment correction
+================================================================================
+Rebuilt the BY heading with the original Three Rs' R/remaining-letter class
+pair for pixel-equivalent font size and baseline behavior. Kept the
+McPHERSON COLLEGE words styled separately at their existing size.
+Preserved V6.9 consolidated documentation and current CMS preservation installer.

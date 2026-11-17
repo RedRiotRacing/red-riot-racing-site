@@ -681,3 +681,45 @@ body{background:var(--black);color:var(--white)}
   margin-right:-.05em;
   transform:translateY(.03em);
 }
+
+/* V6.10: Use the EXACT same direct sibling R/rest markup and styles for B/Y
+   as the original R/ACING. This locks the B/Y alignment, font sizes and
+   baseline relationship together. College wording is a separate element
+   that preserves its existing font size, font, color, break and period. */
+.rr-v65-college-story-name {
+  display:flex;
+  align-items:baseline;
+  gap:0;
+  white-space:normal;
+  letter-spacing:-.055em;
+}
+.rr-v65-college-story-name > .rr-v6-story-r,
+.rr-v65-college-story-name > .rr-v6-story-rest {
+  flex:none;
+  align-self:baseline;
+  position:static;
+  margin:0;
+  padding:0;
+  transform:none;
+}
+.rr-v610-college-rest {
+  display:block;
+  flex:none;
+  align-self:baseline;
+  font-size:clamp(29px,3.2vw,58px);
+  line-height:1.1;
+  letter-spacing:-.065em;
+  color:#fff;
+  white-space:nowrap;
+  margin-left:.05em;
+}
+.rr-v610-college-rest .rr-v6-story-period {
+  color:#e32636;
+  font-size:inherit;
+}
+@media(max-width:980px) {
+  .rr-v610-college-rest{font-size:clamp(30px,6vw,64px)}
+}
+@media(max-width:560px) {
+  .rr-v610-college-rest{font-size:clamp(24px,6.4vw,44px)}
+}

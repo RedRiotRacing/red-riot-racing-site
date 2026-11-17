@@ -1,22 +1,20 @@
-# Red Riot Racing V6.9 Complete Safe Swap
+# Red Riot Racing V6.10 — Preview Safe Swap
 
-This package includes the latest safe-swap website files with the following updates:
+This complete site package fixes the BY McPHERSON COLLEGE heading. The B and Y now use the same HTML/CSS classes as R and ACING in the original RACING heading, matching their relative horizontal and vertical position and font sizes. The McPHERSON COLLEGE text is separate and retains its prior type size, color, and two-line wording. The college logo remains removed from the fourth story section.
 
-- Adjusted the **BY McPherson College** fourth-story segment so the **Y** sits like the **A** in **RACING**, instead of floating high against the large **B**.
-- Updated page asset references from **v=6.8** to **v=6.9**.
-- Consolidated the multiple `README*.txt` files into **`README-CONSOLIDATED.txt`**.
-- Consolidated the multiple `V*.txt` version / changelog notes into **`VERSION-HISTORY-CONSOLIDATED.txt`**.
+## Installation
 
-## Swap instructions
+1. Open GitHub Desktop and select the `redesign-preview` branch.
+2. Fetch and pull changes. Ensure the working tree is clean.
+3. Extract this ZIP and run `INSTALL-V5-PREVIEW.command` on macOS.
+4. Select the GitHub repository root (`red-riot-racing-site`) when prompted.
+5. Review changes, commit, and push `redesign-preview`.
+6. Check the Cloudflare preview before merging into `main`.
 
-1. Open the included `red-riot-racing` folder.
-2. Replace the contents of your live site folder with the contents of that folder.
-3. Commit and push, or upload the replacement files.
-4. If a page still shows an older version briefly, refresh once after deployment finishes.
+The installer backs up the repository to Desktop and preserves your current repository `data/`, `media/`, and existing `.pages.yml`. The included JSON files are starter/default files, not a replacement for CMS content already in GitHub.
 
-## Main files in this package
+## Documentation
 
-- `red-riot-racing/` — the site itself
-- `README-CONSOLIDATED.txt` — combined plain-text readmes
-- `VERSION-HISTORY-CONSOLIDATED.txt` — combined plain-text version notes
-- `.pages.yml` — Pages config
+- `README-CONSOLIDATED.txt`: combined earlier README text documents.
+- `VERSION-HISTORY-CONSOLIDATED.txt`: combined version history notes.
+- `red-riot-racing/README.md`: original website reference notes.

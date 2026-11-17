@@ -121,3 +121,12 @@ The white Y is now scaled to the same responsive size as the white A in RACING a
 
 Use INSTALL-V5-PREVIEW.command on the redesign-preview branch; it preserves current CMS data and media. Test visually before merging to main.
 
+
+================================================================================
+V6.10 — BY / McPHERSON COLLEGE FIX
+================================================================================
+The B and Y now use the exact same typography classes, HTML relationship,
+and baseline alignment as the R and ACING in the RACING heading.
+The McPHERSON COLLEGE text retains its font size, color, and line break.
+The college logo remains removed from this story section.
+Install with INSTALL-V5-PREVIEW.command on the redesign-preview branch.
