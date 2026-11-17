@@ -141,3 +141,5 @@ V6.13: BY McPHERSON COLLEGE remains one continuous line within its original left
 
 
 V6.16: By McPherson College section now follows the first proposed concept: entire oversized BY in red, McPHERSON and COLLEGE. on two lines beside it, with the foundation label and approved paragraph left-aligned underneath. The first three Rs and all other site sections were not changed.
+
+V6.19: Enlarged ONLY McPHERSON / COLLEGE. text within the left column. Red BY, columns, paragraph, and everything else unchanged.

@@ -10,3 +10,5 @@ Use `INSTALL-V5-PREVIEW.command` on the `redesign-preview` branch. The installer
 - BY remains completely red and uses the same large font as the Three Rs.
 - McPHERSON and COLLEGE. stay in two lines, with their font size reduced so the heading fits the opposite column.
 - The original Three Rs, fourth paragraph copy, other pages, and CMS entries are unchanged.
+
+V6.19: Enlarged only the McPHERSON / COLLEGE. text in the fourth About-page story section; BY and paragraph unchanged.
