@@ -658,3 +658,9 @@ body{background:var(--black);color:var(--white)}
 .rr-v65-college-story .rr-v65-college-logo-link{display:block;width:min(100%,320px);max-width:320px;margin:32px auto 0;}
 .rr-v65-college-story .rr-v65-college-logo-link img{display:block;width:100%;height:auto;max-height:120px;object-fit:contain;object-position:center;}
 @media(max-width:560px){.rr-v65-college-story .rr-v65-college-logo-link{max-width:260px;margin:25px auto 0;}}
+
+/* V6.22 — Center official college logo across the entire About section, not the right column. */
+.rr-v622-college-fullwidth-logo{display:flex;justify-content:center;align-items:center;width:100%;padding-top:clamp(12px,2vw,32px)}
+.rr-v622-college-fullwidth-logo .rr-v65-college-logo-link{display:block;margin:0 auto;width:min(100%,320px);max-width:320px}
+.rr-v622-college-fullwidth-logo .rr-v65-college-logo-link img{display:block;width:100%;height:auto;object-fit:contain;object-position:center}
+@media(max-width:560px){.rr-v622-college-fullwidth-logo .rr-v65-college-logo-link{width:min(100%,260px)}}

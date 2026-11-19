@@ -1,4 +1,4 @@
-# Red Riot Racing V6.21 — V6.5 Layout Restoration
+# Red Riot Racing V6.22 — V6.5 Layout Restoration
 
 The fourth story row on the About page has been restored directly from **V6.5**:
 
@@ -9,3 +9,5 @@ The fourth story row on the About page has been restored directly from **V6.5**:
 - The consolidated README and version notes remain in the root of the ZIP.
 
 Use the included `INSTALL-V5-PREVIEW.command` on the `redesign-preview` branch. It preserves your current repository CMS data and uploaded media.
+
+V6.22: Official McPherson College logo moved below the fourth story row, centered across the full page width; original V6.5 heading and paragraph columns unchanged.
