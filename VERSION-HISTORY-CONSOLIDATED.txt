@@ -265,3 +265,12 @@ V6.12 — Restored 2-column About story: the BY letter pair retains its approved
 V6.13 — Removed the artificial line break between BY and McPHERSON COLLEGE by placing them together in a single non-wrapping left-column headline. Right-column description remains in place.
 
 V6.15 — Enlarged only McPHERSON COLLEGE. in its existing one-line left-column heading. The B/Y, paragraph, and grid layout are unchanged.
+
+
+V6.16 — Layout revision to By McPherson College only. Full red BY sized like the other large Rs, school name on two lines beside it, foundation copy under the heading on the left. No official college logo in this segment.
+
+V6.19: Adjusted desktop school heading font size from clamp(19px,1.9vw,32px) to clamp(22px,2.9vw,56px), retaining original layout and wording.
+
+V6.20 — Enlarged McPHERSON / COLLEGE. heading desktop font size only, preserving BY and paragraph placement.
+
+V6.21 — Restored actual V6.5 fourth-story HTML and CSS; centered official McPherson College logo beneath foundation paragraph; updated asset cache references.

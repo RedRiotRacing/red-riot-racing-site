@@ -1,3 +1,5 @@
+V6.18: Reversed only the accidental fourth-section column swap. Red BY and McPherson College are on left; paragraph on right.
+
 RED RIOT RACING — CONSOLIDATED README
 This file combines the previous README text documents for easier reference.
 
@@ -136,3 +138,8 @@ V6.11 — About page: Kept the B/Y interlock identical to V6.10. Put McPHERSON C
 
 
 V6.13: BY McPHERSON COLLEGE remains one continuous line within its original left column; original right-side paragraph and approved B/Y letter styling preserved.
+
+
+V6.16: By McPherson College section now follows the first proposed concept: entire oversized BY in red, McPHERSON and COLLEGE. on two lines beside it, with the foundation label and approved paragraph left-aligned underneath. The first three Rs and all other site sections were not changed.
+
+V6.19: Enlarged ONLY McPHERSON / COLLEGE. text within the left column. Red BY, columns, paragraph, and everything else unchanged.
