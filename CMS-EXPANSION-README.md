@@ -1,7 +1,11 @@
-# Red Riot Racing V6.20 — Complete Safe Swap
+# Red Riot Racing V6.21 — V6.5 Layout Restoration
 
-V6.20 changes **only** the McPHERSON / COLLEGE. lettering in the fourth About-page story row: its desktop font-size increases from `clamp(22px, 2.9vw, 56px)` to `clamp(22px, 3.6vw, 70px)`. This uses more of the space between the heading and paragraph, matching the approved rendering.
+The fourth story row on the About page has been restored directly from **V6.5**:
 
-The oversized red BY, white lettering style and two-line text, paragraph and right-hand column, original Three Rs, Pages CMS entries, existing data/media preservation, and other pages are unchanged.
+- **BY McPHERSON / COLLEGE.** heading occupies the left column with the original V6.5 typography and spacing.
+- **04 / OUR FOUNDATION** and the supplied paragraph occupy the right column, unchanged.
+- The official white McPherson College logo appears **centered beneath the paragraph in that right column**, linked to the college website.
+- The first three Rs and all other pages/content are unchanged.
+- The consolidated README and version notes remain in the root of the ZIP.
 
-Run `INSTALL-V5-PREVIEW.command` from the extracted ZIP on the `redesign-preview` branch. The installer makes a Desktop backup before changing the site; check the preview before merging into `main`.
+Use the included `INSTALL-V5-PREVIEW.command` on the `redesign-preview` branch. It preserves your current repository CMS data and uploaded media.
